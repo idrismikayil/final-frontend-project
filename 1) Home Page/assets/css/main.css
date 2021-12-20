@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  height: 1000vh;
+}
+
+nav {
+  background-color: whitesmoke;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  height: 70px;
+}
+
+nav .container .logo img {
+  width: 205px;
+}
+
+nav .container .options {
+  padding: 0;
+}
+
+nav .container .options ul {
+  margin: 0px;
+  padding: 0;
+}
+
+nav .container .options ul li {
+  list-style: none;
+  padding-right: 8%;
+  padding-top: 5px;
+  font-size: 12px;
+  font-weight: 550;
+  color: #1b1b1b;
+}
+
+nav .container .mix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+nav .container .mix .search-icon {
+  padding-right: 25px;
+}
+
+nav .container .mix .basket-icon {
+  padding-right: 25px;
+}
+
+footer {
+  padding-top: 90px;
+  padding-bottom: 20px;
+  background-color: #fefaf3;
+}
+
+footer .top-footer .col-3 .title {
+  padding-top: 50px;
+}
+
+footer .top-footer .col-3 .list {
+  padding-top: 30px;
+}
+
+footer .top-footer .col-3 .list ul {
+  list-style: none;
+  padding: 0px;
+}
+
+footer .top-footer .col-3 .list ul li a {
+  text-decoration: none;
+  color: #8b8b8b;
+  font-weight: 12px;
+}
+
+footer .top-footer .col-3 .list ul li a:hover {
+  color: #f34f3f;
+}
+
+footer .bottom-footer .line {
+  border-top: 1px solid #8b8b8b;
+}
+/*# sourceMappingURL=main.css.map */

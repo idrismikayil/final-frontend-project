@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 1000vh;
+}
+
+nav {
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    height: 70px;
+
+    .container {
+
+        .logo {
+            // border: 1px solid black;
+
+            img {
+                width: 205px;
+            }
+
+        }
+
+        .options {
+            // border: 1px solid black;
+            padding: 0;
+
+            ul {
+                margin: 0px;
+                padding: 0;
+
+                li {
+                    list-style: none;
+                    padding-right: 8%;
+                    padding-top: 5px;
+                    font-size: 12px;
+                    font-weight: 550;
+                    color: #1b1b1b;
+                }
+            }
+        }
+
+        .mix {
+            // border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+
+            .search-icon {
+                padding-right: 25px;
+            }
+
+            .basket-icon {
+                padding-right: 25px;
+            }
+        }
+
+    }
+}
+
+footer {
+    padding-top: 90px;
+    padding-bottom: 20px;
+    background-color: #fefaf3;
+
+    .top-footer {
+        .col-3 {
+            .title {
+                padding-top: 50px;
+            }
+
+            .list {
+                padding-top: 30px;
+
+                ul {
+                    list-style: none;
+                    padding: 0px;
+
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: #8b8b8b;
+                            font-weight: 12px;
+                            &:hover{
+                                color: #f34f3f;
+                            }
+                        }
+                        
+                    }
+                   
+                }
+            }
+        }
+    }
+
+    .bottom-footer {
+
+        .line {
+            border-top: 1px solid #8b8b8b;
+
+        }
+    }
+}
