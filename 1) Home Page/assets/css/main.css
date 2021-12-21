@@ -7,12 +7,25 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-body {
-  height: 1000vh;
+a .up {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  width: 40px;
+  height: 40px;
+  background-color: #f34f3f;
+}
+
+a .up i {
+  position: absolute;
+  left: 9px;
+  top: 7px;
+  font-size: 30px;
+  color: white;
 }
 
 nav {
-  background-color: whitesmoke;
+  background-color: white;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,6 +57,98 @@ nav .container .options ul li {
   font-size: 12px;
   font-weight: 550;
   color: #1b1b1b;
+  cursor: pointer;
+}
+
+nav .container .options ul li .second {
+  position: absolute;
+  display: block;
+  height: 0px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+}
+
+nav .container .options ul li .second ul {
+  padding-top: 15px;
+}
+
+nav .container .options ul li .second ul li {
+  padding-bottom: 15px;
+}
+
+nav .container .options ul li .second ul li a {
+  text-decoration: none;
+  color: #737373;
+}
+
+nav .container .options ul li:hover .second {
+  margin-top: 25px;
+  height: 283px;
+  width: 150px;
+  visibility: visible;
+  opacity: 1;
+  overflow: visible;
+  background-color: white;
+  padding-left: 15px;
+}
+
+nav .container .options ul li:hover #pages {
+  margin-top: 25px;
+  height: 130px;
+  width: 150px;
+  visibility: visible;
+  opacity: 1;
+  overflow: visible;
+  background-color: white;
+  padding-left: 15px;
+}
+
+nav .container .options ul li:hover #shop {
+  margin-top: 25px;
+  padding-top: 17px;
+  height: 370px;
+  width: 90%;
+  visibility: visible;
+  opacity: 1;
+  overflow: visible;
+  background-color: white;
+  padding-left: 15px;
+  left: 5%;
+}
+
+nav .container .options ul li:hover #portfolio {
+  margin-top: 25px;
+  height: 200px;
+  width: 150px;
+  visibility: visible;
+  opacity: 1;
+  overflow: visible;
+  background-color: white;
+  padding-left: 15px;
+}
+
+nav .container .options ul li:hover #blog {
+  margin-top: 25px;
+  height: 130px;
+  width: 150px;
+  visibility: visible;
+  opacity: 1;
+  overflow: visible;
+  background-color: white;
+  padding-left: 15px;
+}
+
+nav .container .options ul li:hover #elements {
+  margin-top: 25px;
+  height: 170px;
+  width: 150px;
+  visibility: visible;
+  opacity: 1;
+  overflow: visible;
+  background-color: white;
+  padding-left: 15px;
 }
 
 nav .container .mix {
@@ -64,8 +169,162 @@ nav .container .mix .basket-icon {
   padding-right: 25px;
 }
 
+.box {
+  width: 100%;
+  background-color: black;
+  height: 1px;
+  padding-top: 70px;
+}
+
+main #slider {
+  position: relative;
+}
+
+main #slider .images {
+  width: 100%;
+}
+
+main #slider .images .slick-prev {
+  left: 40px;
+  z-index: 9999;
+}
+
+main #slider .images .slick-prev::before {
+  font-size: 40px;
+  color: gray;
+}
+
+main #slider .images .slick-next {
+  right: 40px;
+}
+
+main #slider .images .slick-next::before {
+  font-size: 40px;
+  color: gray;
+}
+
+main #slider .images .image {
+  overflow: hidden;
+  width: 1519px;
+  height: 488px;
+}
+
+main #slider .images .image img {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: f_img_scale 4.2555s infinite;
+          animation: f_img_scale 4.2555s infinite;
+}
+
+@-webkit-keyframes f_img_scale {
+  0% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(1.05) translateZ(0);
+            transform: scale(1.05) translateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+}
+
+@keyframes f_img_scale {
+  0% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(1.05) translateZ(0);
+            transform: scale(1.05) translateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+  }
+}
+
+main #slider .title {
+  width: 30%;
+  position: absolute;
+  top: 20%;
+  left: 200px;
+}
+
+main #slider .title h2 {
+  padding: 0 90px 15px 0;
+  color: #0e0e0e;
+  font-family: 'Playfair Display', serif;
+  font-size: 41px;
+  line-height: 51px;
+  font-weight: 400;
+}
+
+main #slider .title h2 span {
+  color: #f34f3f;
+}
+
+main #slider .title p {
+  padding: 0 10px 10px 0;
+  color: #6d6a6a;
+  font-size: 17px;
+  font-family: 'Lora', serif;
+  line-height: 29px;
+  font-weight: 400;
+}
+
+main #slider .title img {
+  width: 197px;
+  height: 56px;
+}
+
+main .products .options ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0px;
+}
+
+main .products .options ul #all {
+  color: #f34f3f;
+}
+
+main .products .options ul li {
+  padding-right: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #1b1b1b;
+  cursor: pointer;
+}
+
+main .products .options ul li:hover {
+  color: #f34f3f;
+}
+
+main .products .all .col-3 {
+  border: 1px solid;
+}
+
+main .products .all .col-3 .image img {
+  width: 100%;
+}
+
+main .products .all .other .title {
+  text-align: center;
+}
+
+main .products .all .other .price-add .price {
+  text-align: center;
+}
+
+main .products .all .other .price-add .add {
+  text-align: center;
+}
+
 footer {
-  padding-top: 90px;
   padding-bottom: 20px;
   background-color: #fefaf3;
 }
@@ -86,7 +345,7 @@ footer .top-footer .col-3 .list ul {
 footer .top-footer .col-3 .list ul li a {
   text-decoration: none;
   color: #8b8b8b;
-  font-weight: 12px;
+  font-size: 12px;
 }
 
 footer .top-footer .col-3 .list ul li a:hover {
@@ -95,5 +354,40 @@ footer .top-footer .col-3 .list ul li a:hover {
 
 footer .bottom-footer .line {
   border-top: 1px solid #8b8b8b;
+}
+
+footer .bottom-footer .container .rights span {
+  font-size: 12px;
+  color: #afafaf;
+}
+
+footer .bottom-footer .container .rights span a {
+  text-decoration: none;
+  color: #6d6a6a;
+}
+
+footer .bottom-footer .container .rights span a:hover {
+  color: #f34f3f;
+}
+
+footer .bottom-footer .container .insta-face .insta a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #8b8b8b;
+}
+
+footer .bottom-footer .container .insta-face .insta a:hover {
+  color: #f34f3f;
+}
+
+footer .bottom-footer .container .insta-face .face a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #8b8b8b;
+  padding-left: 25px;
+}
+
+footer .bottom-footer .container .insta-face .face a:hover {
+  color: #f34f3f;
 }
 /*# sourceMappingURL=main.css.map */
