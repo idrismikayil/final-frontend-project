@@ -411,7 +411,7 @@ main #click .container .content .third .add_reviews {
 
 main #click .container .content .third .add_reviews h2 {
   margin-bottom: 20px;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 30px;
   color: #1b1b1b;
   line-height: 1.4em;
@@ -446,7 +446,7 @@ main #click .container .content .third .add_reviews .review form input.button {
   background-color: #f34f3f;
   text-transform: uppercase;
   font-size: 12px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.833em;
   letter-spacing: .1em;
   font-weight: 500;
