@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i|Montserrat:400,500|Playfair+Display&display=swap");
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
 }
 
 a .up {
@@ -33,7 +32,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: fixed;
   height: 70px;
 }
 
@@ -169,13 +167,6 @@ nav .container .mix .basket-icon {
   padding-right: 25px;
 }
 
-.box {
-  width: 100%;
-  background-color: black;
-  height: 1px;
-  padding-top: 70px;
-}
-
 main #slider {
   position: relative;
 }
@@ -184,28 +175,9 @@ main #slider .images {
   width: 100%;
 }
 
-main #slider .images .slick-prev {
-  left: 40px;
-  z-index: 9999;
-}
-
-main #slider .images .slick-prev::before {
-  font-size: 40px;
-  color: gray;
-}
-
-main #slider .images .slick-next {
-  right: 40px;
-}
-
-main #slider .images .slick-next::before {
-  font-size: 40px;
-  color: gray;
-}
-
 main #slider .images .image {
   overflow: hidden;
-  width: 1519px;
+  width: 100%;
   height: 488px;
 }
 
@@ -280,48 +252,493 @@ main #slider .title img {
   height: 56px;
 }
 
-main .products .options ul {
+main #category {
+  margin-bottom: 5rem;
+}
+
+main #category .filters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #category .filters .filter-flower {
+  width: 50%;
+}
+
+main #category .filters .filter-flower ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: -22px;
+  padding-left: 0px;
+  margin-top: 20px;
+}
+
+main #category .filters .filter-flower ul li {
+  margin: 0px;
+  padding: 0px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 400;
+  color: #1b1b1b;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+main #category .filters .filter-flower ul li:hover {
+  color: #f34f3f;
+}
+
+main #category .filters .filter {
+  position: relative;
+  margin-top: 20px;
+}
+
+main #category .filters .filter:hover .sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #category .filters .filter .sort {
+  display: none;
+  position: absolute;
+  right: 10px;
+  background-color: white;
+  width: 400px;
+}
+
+main #category .filters .filter .sort ul {
+  list-style: none;
+}
+
+main #category .filters .filter .sort ul li {
+  margin-bottom: 5px;
+}
+
+main #category .filters .filter .sort ul li a {
+  text-decoration: none;
+  color: #6d6a6a;
+}
+
+main #category .filters .filter .sort ul li a:hover {
+  color: #1b1b1b;
+}
+
+main #category .products {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main #category .products .col-lg-3 .mycard {
+  -webkit-transform: 0.4s;
+          transform: 0.4s;
+}
+
+main #category .products .col-lg-3 .mycard .card-body .name a {
+  text-decoration: none;
+  color: #1b1b1b;
+  margin: 0px;
   padding: 0px;
 }
 
-main .products .options ul #all {
-  color: #f34f3f;
+main #category .products .col-lg-3 .mycard .card-body .price-cards .add a {
+  text-decoration: none;
+  color: #6d6a6a;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
 }
 
-main .products .options ul li {
-  padding-right: 20px;
-  font-size: 12px;
-  font-weight: bold;
-  color: #1b1b1b;
+main #category .products .col-lg-3 .mycard .card-body .price-cards .price a {
+  text-decoration: none;
+  color: #6d6a6a;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+main #category .products .col-lg-3 .mycard:hover .card-body {
+  text-align: center;
+}
+
+main #category .products .col-lg-3 .mycard:hover .card-body .price-cards .price {
+  -webkit-transform: translateX(33px);
+          transform: translateX(33px);
+  opacity: 0;
+}
+
+main #category .products .col-lg-3 .mycard:hover .card-body .price-cards .add {
+  opacity: 1;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+main #category .products .col-lg-3 .card-body {
+  text-align: center;
+}
+
+main #category .products .col-lg-3 .card-body .name {
+  font-size: 13px;
+}
+
+main #category .products .col-lg-3 .card-body .price-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #category .products .col-lg-3 .card-body .price-cards .price {
+  color: #757575;
+  font-size: 13px;
+  -webkit-transform: translateX(-33px);
+          transform: translateX(-33px);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main #category .products .col-lg-3 .card-body .price-cards .add {
+  color: #757575;
+  font-size: 13px;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main #video_part {
+  background: #f8f8f8;
+  padding: 110px 0;
+}
+
+main #video_part .container .row .video {
+  overflow: hidden;
+}
+
+main #video_part .container .row .video:hover .image a img {
+  -webkit-transform: scale(1.05) translateZ(0);
+          transform: scale(1.05) translateZ(0);
+}
+
+main #video_part .container .row .video .image {
+  position: relative;
+}
+
+main #video_part .container .row .video .image a img {
+  width: 100%;
+  -webkit-transform: scale(1) translateZ(0);
+          transform: scale(1) translateZ(0);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+main #video_part .container .row .video .image a .play_button {
   cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: 41%;
 }
 
-main .products .options ul li:hover {
+main #video_part .container .row .video .image a .play_button i {
+  color: #f34f3f;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 31px 33px;
+  font-size: 20px;
+}
+
+main #video_part .container .row .content {
+  padding: 0 45px;
+}
+
+main #video_part .container .row .content h2 {
+  color: #1b1b1b;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 1.447em;
+}
+
+main #video_part .container .row .content h2 span {
   color: #f34f3f;
 }
 
-main .products .all .col-3 {
-  border: 1px solid;
+main #video_part .container .row .content p {
+  font-size: 17px;
+  line-height: 29px;
+  margin-top: 27px;
+  font-family: 'Lora', serif;
+  color: #afafaf;
 }
 
-main .products .all .col-3 .image img {
+main #video_part .container .row .content .title {
+  margin-top: 25px;
+}
+
+main #video_part .container .row .content .title .img {
+  display: inline-block;
+}
+
+main #video_part .container .row .content .title p {
+  display: inline-block;
+  margin: 0 0 15px 15px;
+}
+
+main #about_experts {
+  padding: 60px 0 120px;
+}
+
+main #about_experts .container .title {
+  padding: 50px 0;
+}
+
+main #about_experts .container .title h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  color: black;
+  font-weight: 400;
+}
+
+main #about_experts .container .title p {
+  font-family: 'Lora', serif;
+  font-size: 17px;
+  color: #6d6a6a;
+  line-height: 29px;
+}
+
+main #about_experts .container .experts .row .expert .content h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #1b1b1b;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+}
+
+main #about_experts .container .experts .row .expert .content span {
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  color: #afafaf;
+}
+
+main #join_to_us {
+  background-image: url("../images/h3-background-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-attachment: fixed;
+}
+
+main #join_to_us .container .main {
+  padding: 150px 0 180px 0;
+}
+
+main #join_to_us .container .main .title h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.4em;
+  color: #ffffff;
+}
+
+main #join_to_us .container .main .search .search_input input {
+  color: #959595;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px;
+  width: 330px;
+  border: none;
+}
+
+main #join_to_us .container .main .search .search_button button {
+  padding: 15px 30px;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #f34f3f;
+  border: none;
+}
+
+main #join_to_us .container .main .search_click {
+  display: none;
+  padding: 20px 0;
+}
+
+main #join_to_us .container .main .search_click .search_required {
+  margin-top: 10px;
+}
+
+main #join_to_us .container .main .search_click .search_required span {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 24px;
+}
+
+main #from_our_blog {
+  background: #f8f8f8;
+  padding: 60px 0;
+}
+
+main #from_our_blog .container .title {
+  padding: 50px 0;
+}
+
+main #from_our_blog .container .title h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  color: #0e0e0e;
+  font-weight: 400;
+}
+
+main #from_our_blog .container .title p {
+  font-family: 'Lora', serif;
+  font-size: 17px;
+  color: #6d6a6a;
+  line-height: 29px;
+}
+
+main #from_our_blog .container .about_flowers .row .about_flower .img {
+  overflow: hidden;
+  position: relative;
+}
+
+main #from_our_blog .container .about_flowers .row .about_flower .img:hover a img {
+  -webkit-transform: scale(1.05) translateZ(0);
+          transform: scale(1.05) translateZ(0);
+}
+
+main #from_our_blog .container .about_flowers .row .about_flower .img a img {
+  width: 100%;
+  -webkit-transform: scale(1) translateZ(0);
+          transform: scale(1) translateZ(0);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+main #from_our_blog .container .about_flowers .row .about_flower .img .date {
+  background: #ffffff;
+  padding: 5px 17px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+main #from_our_blog .container .about_flowers .row .about_flower .img .date a {
+  text-decoration: none;
+  vertical-align: middle;
+  letter-spacing: .15em;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  font-size: 10px;
+}
+
+main #from_our_blog .container .about_flowers .row .about_flower .img .date a:hover {
+  color: #f34f3f;
+  -webkit-transition: all 0.2 ease-out;
+  transition: all 0.2 ease-out;
+}
+
+main #from_our_blog .container .about_flowers .row .about_flower .content h5 a {
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #0e0e0e;
+  line-height: 1.363em;
+  font-weight: 400;
+}
+
+main #from_our_blog .container .about_flowers .row .about_flower .content p {
+  font-family: 'Lora', serif;
+  line-height: 1.6em;
+  font-size: 15px;
+  color: #6d6a6a;
+}
+
+main #second_slider {
+  padding: 120px 0;
+}
+
+main #second_slider .container .row .slider {
+  width: 45%;
+  margin: 0 auto;
+}
+
+main #second_slider .container .row .slider .slick-prev {
+  left: -100px;
+}
+
+main #second_slider .container .row .slider .slick-prev::before {
+  font-size: 40px;
+  color: gray;
+}
+
+main #second_slider .container .row .slider .slick-next {
+  right: -100px;
+}
+
+main #second_slider .container .row .slider .slick-next::before {
+  font-size: 40px;
+  color: gray;
+}
+
+main #second_slider .container .row .slider .draggable {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+main #second_slider .container .row .slider .item {
   width: 100%;
 }
 
-main .products .all .other .title {
-  text-align: center;
+main #second_slider .container .row .slider .item .image img {
+  width: 18%;
+  display: inline-block;
 }
 
-main .products .all .other .price-add .price {
-  text-align: center;
+main #second_slider .container .row .slider .item .title p {
+  font-style: italic;
+  margin: 30px 0;
+  font-family: 'Lora', serif;
+  font-size: 24px;
+  color: #4b4747;
+  line-height: 1.5em;
 }
 
-main .products .all .other .price-add .add {
-  text-align: center;
+main #second_slider .container .row .slider .item .title span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #afafaf;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+main #second_slider .container .row .slider .item .title span.name {
+  color: #1b1b1b;
+  line-height: 2em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 footer {

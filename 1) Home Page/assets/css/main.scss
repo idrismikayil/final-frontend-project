@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i|Montserrat:400,500|Playfair+Display&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
 }
 
-
-a{
+a {
     .up {
         position: fixed;
         bottom: 35px;
@@ -16,7 +14,7 @@ a{
         width: 40px;
         height: 40px;
         background-color: #f34f3f;
-    
+
         i {
             position: absolute;
             left: 9px;
@@ -32,7 +30,7 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
-    position: fixed;
+    // position: fixed;
     height: 70px;
 
     .container {
@@ -85,8 +83,6 @@ nav {
                         }
 
                     }
-
-                    #shop {}
 
                     &:hover {
                         .second {
@@ -184,73 +180,69 @@ nav {
     }
 }
 
-.box {
-    width: 100%;
-    background-color: black;
-    height: 1px;
-    padding-top: 70px;
-}
+// .box {
+//     width: 100%;
+//     background-color: black;
+//     height: 1px;
+//     padding-top: 70px;
+// }
 
 main {
 
-    #slider{
+    #slider {
         position: relative;
-        .images{
+
+        .images {
             width: 100%;
-            .slick-prev{
-                left: 40px;
-                z-index: 9999;
-                &::before{
-                    font-size: 40px;
-                    color: gray;
-                }
-            }
-            .slick-next{
-                right: 40px;
-                &::before{
-                    font-size: 40px;
-                    color: gray;
-                }
-            }
-            .image{
+
+            .image {
                 overflow: hidden;
-                width: 1519px;
+                width: 100%;
                 height: 488px;
-                img{
+
+                img {
                     width: 100%;
                     height: 100%;
-                    animation: f_img_scale 4.2555s infinite; 
+                    animation: f_img_scale 4.2555s infinite;
                 }
+
                 @keyframes f_img_scale {
-                    0%{
+                    0% {
                         transform: scale(1) translateZ(0);
                     }
-                    50%{
+
+                    50% {
                         transform: scale(1.05) translateZ(0);
                     }
-                    100%{
+
+                    100% {
                         transform: scale(1) translateZ(0);
                     }
                 }
             }
         }
-        .title{
+
+        .title {
             width: 30%;
             position: absolute;
             top: 20%;
             left: 200px;
-            h2{
+
+            h2 {
                 padding: 0 90px 15px 0;
                 color: #0e0e0e;
-                font-family: 'Playfair Display', serif;;
+                font-family: 'Playfair Display', serif;
+                ;
                 font-size: 41px;
                 line-height: 51px;
                 font-weight: 400;
-                span{
+
+                span {
                     color: #f34f3f;
                 }
             }
-            p{
+
+            p {
                 padding: 0 10px 10px 0;
                 color: #6d6a6a;
                 font-size: 17px;
@@ -258,184 +250,566 @@ main {
                 line-height: 29px;
                 font-weight: 400;
             }
-            img{
+
+            img {
                 width: 197px;
                 height: 56px;
             }
         }
     }
-   
 
-    .products {
-        .options {
-            ul {
-                display: flex;
-                list-style: none;
-                padding: 0px;
+    #category {
+        margin-bottom: 5rem;
 
-                #all {
-                    color: #f34f3f
+        .filters {
+            display: flex;
+            justify-content: space-between;
+
+
+
+            .filter-flower {
+                width: 50%;
+
+                ul {
+
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-evenly;
+                    margin-left: -22px;
+                    padding-left: 0px;
+                    margin-top: 20px;
+
+                    li {
+                        margin: 0px;
+                        padding: 0px;
+                        cursor: pointer;
+                        font-size: 13px;
+                        font-weight: 400;
+                        color: #1b1b1b;
+                        transition: 0.2s;
+
+                        &:hover {
+                            color: #f34f3f;
+                        }
+
+                    }
+                }
+            }
+
+            .filter {
+                position: relative;
+                margin-top: 20px;
+
+                &:hover {
+                    .sort {
+                        display: flex;
+                    }
                 }
 
-                li {
-                    padding-right: 20px;
-                    font-size: 12px;
-                    font-weight: bold;
-                    color: #1b1b1b;
-                    cursor: pointer;
-                    &:hover{
-                        color: #f34f3f;
+                .sort {
+                    display: none;
+                    position: absolute;
+                    right: 10px;
+                    background-color: white;
+                    width: 400px;
+
+                    ul {
+                        list-style: none;
+
+                        li {
+                            margin-bottom: 5px;
+
+                            a {
+                                text-decoration: none;
+                                color: #6d6a6a;
+
+                                &:hover {
+                                    color: #1b1b1b;
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
 
-        .all {
-            .col-3 {
-                border: 1px solid;
+        .products {
+            transition: 0.4s;
 
-                .image {
-                    img {
-                        width: 100%;
-                        
+            .col-lg-3 {
+
+                .mycard {
+                    transform: 0.4s;
+
+                    // .cardd-header {
+                    //     a {
+                    //         img {
+                    //             overflow: hidden;
+                    //             &:hover {
+                    //                 transform: scale(1.05) translateZ(0);
+                    //             }
+                    //         }
+
+
+                    //     }
+                    //     a {
+                    //         img {
+                    //             width: 100%;
+                    //             transform: scale(1) translateZ(0);
+                    //             transition: transform 0.3s ease;
+                    //         }
+                    //     }
+
+                    // }
+
+                    .card-body {
+                        .name {
+                            a {
+                                text-decoration: none;
+                                color: #1b1b1b;
+                                margin: 0px;
+                                padding: 0px;
+                            }
+
+
+                        }
+
+                        .price-cards {
+                            .add {
+                                a {
+                                    text-decoration: none;
+                                    color: #6d6a6a;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    text-align: center;
+                                }
+                            }
+
+                            .price {
+                                a {
+                                    text-decoration: none;
+                                    color: #6d6a6a;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    text-align: center;
+                                }
+                            }
+                        }
                     }
-                   
-                }
-               
-            }
 
-            .other {
-                .title {
+                    &:hover {
+                        .card-body {
+                            text-align: center;
+
+                            .price-cards {
+
+                                .price {
+
+                                    transform: translateX(33px);
+                                    opacity: 0;
+
+                                }
+
+                                .add {
+                                    opacity: 1;
+                                    transform: translateX(10px);
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+                .card-body {
                     text-align: center;
 
-                }
+                    .name {
 
-                .price-add {
-
-                    .price {
-                        text-align: center;
-
+                        font-size: 13px;
                     }
 
-                    .add {
-                        text-align: center;
+                    .price-cards {
+                        display: flex;
+                        justify-content: center;
 
+                        .price {
+                            color: #757575;
+                            font-size: 13px;
+                            transform: translateX(-33px);
+                            transition: 0.4s;
+
+
+                        }
+
+                        .add {
+                            color: #757575;
+                            font-size: 13px;
+                            transform: translateX(-50px);
+                            opacity: 0;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    #video_part {
+        background: #f8f8f8;
+        padding: 110px 0;
+
+        .container {
+            .row {
+                .video {
+                    overflow: hidden;
+
+                    &:hover {
+                        .image {
+                            a {
+                                img {
+                                    transform: scale(1.05) translateZ(0);
+                                }
+                            }
+                        }
+                    }
+
+                    .image {
+                        position: relative;
+
+                        a {
+                            img {
+                                width: 100%;
+                                transform: scale(1) translateZ(0);
+                                transition: transform 0.3s ease;
+                            }
+
+                            .play_button {
+                                cursor: pointer;
+                                position: absolute;
+                                top: 40%;
+                                left: 41%;
+
+                                i {
+                                    color: #f34f3f;
+                                    background: #ffffff;
+                                    border-radius: 50%;
+                                    padding: 31px 33px;
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .content {
+                    padding: 0 45px;
+
+                    h2 {
+                        color: #1b1b1b;
+                        font-family: 'Playfair Display', serif;
+                        font-weight: 400;
+                        font-size: 38px;
+                        line-height: 1.447em;
+
+                        span {
+                            color: #f34f3f;
+                        }
+                    }
+
+                    p {
+                        font-size: 17px;
+                        line-height: 29px;
+                        margin-top: 27px;
+                        font-family: 'Lora', serif;
+                        color: #afafaf;
+                    }
+
+                    .title {
+                        margin-top: 25px;
+
+                        .img {
+                            display: inline-block;
+                        }
+
+                        p {
+                            display: inline-block;
+                            margin: 0 0 15px 15px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    #about_experts {
+        padding: 60px 0 120px;
+
+        .container {
+            .title {
+                padding: 50px 0;
+
+                h2 {
+                    font-family: 'Playfair Display', serif;
+                    font-size: 38px;
+                    color: black;
+                    font-weight: 400;
+                }
+
+                p {
+                    font-family: 'Lora', serif;
+                    font-size: 17px;
+                    color: #6d6a6a;
+                    line-height: 29px;
+                }
+            }
+
+            .experts {
+                .row {
+                    .expert {
+                        .content {
+                            h6 {
+                                font-family: 'Montserrat', sans-serif;
+                                font-size: 12px;
+                                font-weight: 500;
+                                color: #1b1b1b;
+                                letter-spacing: 0.1em;
+                                line-height: 2em;
+                            }
+
+                            span {
+                                font-size: 12px;
+                                font-family: 'Montserrat', sans-serif;
+                                color: #afafaf;
+                            }
+                        }
                     }
                 }
             }
         }
     }
 
-    // .products{
-    //     margin-bottom: 5rem;
-    //     .filters{
-    //         display: flex;
-    //         justify-content: space-between;
-    //         .filter{
-    //             position: relative;
-    //             &:hover{
-    //                 .sort{
-    //                     display: flex;
-    //                 }
-    //             }
-    //             .sort{
-    //                 display: none;
-    //                 position: absolute;
-    //                 right: 10px;
-    //                 background-color: white;
-    //                 width: 400px;
-    //                 ul{
-    //                     list-style: none;
-    //                     li{
-    //                         margin-bottom: 5px;
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //         .filter-flower{
-    //             width: 50%;
+    #join_to_us {
+        background-image: url("../images/h3-background-img.jpg");
+        background-repeat: no-repeat;
+        background-position: center 0;
+        background-attachment: fixed;
 
-    //             ul{
+        .container {
+            .main {
+                padding: 150px 0 180px 0;
 
-    //                 list-style: none;
-    //                 display: flex;
-    //                 justify-content: space-evenly;
-    //                 margin-left: -22px;
-    //                 padding-left: 0px;
-    //                 li{
-    //                     margin: 0px;
-    //                     padding: 0px;
-    //                     a{
+                .title {
+                    h3 {
+                        font-family: 'Playfair Display', serif;
+                        font-weight: 400;
+                        font-size: 30px;
+                        line-height: 1.4em;
+                        color: #ffffff;
+                    }
+                }
 
-    //                       font-family: Montserrat,sans-serif;
-    //                       font-size: 13px;
-    //                       font-weight: 400;
-    //                       text-decoration: none;
-    //                       color: #1b1b1b;
-    //                       transition: 0.2s;
-    //                       &:hover{
-    //                           color: orange;
-    //                       }
+                .search {
+                    .search_input {
+                        input {
+                            color: #959595;
+                            font-size: 12px;
+                            font-family: 'Montserrat', sans-serif;
+                            padding: 15px;
+                            width: 330px;
+                            border: none;
+                        }
+                    }
 
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    //     .cover{
-    //         transition: 0.4s;
-    //        .mycard{
-    //            transform: 0.4s;
-    //            &:hover{
-    //             .card-body{
-    //                 text-align: center;
+                    .search_button {
+                        button {
+                            padding: 15px 30px;
+                            font-size: 12px;
+                            font-family: 'Montserrat', sans-serif;
+                            letter-spacing: .1em;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            color: #ffffff;
+                            background-color: #f34f3f;
+                            border: none;
+                        }
+                    }
+                }
 
-    //                 .price-cards{
+                .search_click {
+                    display: none;
+                    padding: 20px 0;
 
-    //                     .price{
+                    .search_required {
+                        margin-top: 10px;
 
-    //                     transform: translateX(33px);
-    //                     opacity: 0;
+                        span {
+                            font-size: 15px;
+                            font-weight: 400;
+                            font-family: 'Montserrat', sans-serif;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
+    #from_our_blog {
+        background: #f8f8f8;
+        padding: 60px 0;
 
-    //                     }
-    //                     .add{
-    //                         opacity: 1;
-    //                         transform: translateX(10px);
-    //                     }
-    //                 }
-    //             }
+        .container {
+            .title {
+                padding: 50px 0;
 
-    //         }
-    //        }
-    //         .card-body{
-    //             text-align: center;
-    //             .name{
+                h2 {
+                    font-family: 'Playfair Display', serif;
+                    font-size: 38px;
+                    color: #0e0e0e;
+                    font-weight: 400;
+                }
 
-    //                 font-size: 13px;
-    //             }
-    //             .price-cards{
-    //                 display: flex;
-    //                 justify-content: center;
-    //                 .price{
-    //                     color: #757575;
-    //                 font-size: 13px;
-    //                 transform: translateX(-33px);
-    //                 transition: 0.4s;
+                p {
+                    font-family: 'Lora', serif;
+                    font-size: 17px;
+                    color: #6d6a6a;
+                    line-height: 29px;
+                }
+            }
 
+            .about_flowers {
+                .row {
+                    .about_flower {
+                        .img {
+                            overflow: hidden;
+                            position: relative;
 
-    //                 }
-    //                 .add{
-    //                     color: #757575;
-    //                     font-size: 13px;
-    //                     transform: translateX(-50px);
-    //                     opacity: 0;
-    //                     transition: 0.3s;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
+                            &:hover a img {
+                                transform: scale(1.05) translateZ(0);
+                            }
+
+                            a {
+                                img {
+                                    width: 100%;
+                                    transform: scale(1) translateZ(0);
+                                    transition: transform 0.3s ease;
+                                }
+                            }
+
+                            .date {
+                                background: #ffffff;
+                                padding: 5px 17px;
+                                position: absolute;
+                                top: 10px;
+                                left: 10px;
+
+                                a {
+                                    text-decoration: none;
+                                    vertical-align: middle;
+                                    letter-spacing: .15em;
+                                    font-weight: 500;
+                                    font-family: 'Montserrat', sans-serif;
+                                    color: #000;
+                                    font-size: 10px;
+
+                                    &:hover {
+                                        color: #f34f3f;
+                                        transition: all 0.2 ease-out;
+                                    }
+                                }
+                            }
+                        }
+
+                        .content {
+                            h5 {
+                                a {
+                                    text-decoration: none;
+                                    font-family: 'Playfair Display', serif;
+                                    font-size: 22px;
+                                    color: #0e0e0e;
+                                    line-height: 1.363em;
+                                    font-weight: 400;
+                                }
+                            }
+
+                            p {
+                                font-family: 'Lora', serif;
+                                line-height: 1.6em;
+                                font-size: 15px;
+                                color: #6d6a6a;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #second_slider{
+        padding: 120px 0;
+        .container{
+            .row{
+                .slider{
+                    .slick-prev{
+                        left: -100px;
+                        &::before{
+                            font-size: 40px;
+                            color: gray;
+                        }
+                    }
+                    .slick-next{
+                        right: -100px;
+                        &::before{
+                            font-size: 40px;
+                            color: gray;
+                        }
+                    }
+                    .draggable{
+                        cursor: grab;
+                    }
+                    width: 45%;
+                    margin: 0 auto;
+                    .item{
+                        width: 100%;
+                        .image{
+                            img{
+                                width: 18%;
+                                display: inline-block;
+                            }
+                        }
+                        .title{
+                            p{
+                                font-style: italic;
+                                margin: 30px 0;
+                                font-family:  'Lora', serif;
+                                font-size:24px;
+                                color: #4b4747;
+                                line-height: 1.5em;
+                            }
+                            span{
+                                &.name{
+                                    color: #1b1b1b;
+                                    line-height: 2em;
+                                    font-weight: 500;
+                                    letter-spacing: 0.1em;
+                                    text-transform: uppercase;
+                                }
+                                font-family: 'Montserrat', sans-serif;
+                                font-size: 12px;
+                                color:#afafaf;
+                                text-transform: capitalize;
+                                letter-spacing: 0;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+
 }
 
 footer {
