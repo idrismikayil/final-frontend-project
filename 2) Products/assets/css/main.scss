@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i|Montserrat:400,500|Playfair+Display&display=swap');
 
+$heading_fontFamily: 'Playfair Display',
+serif;
+$title_fontFamily: 'Montserrat',
+sans-serif;
+$content_fontFamily: 'Lora',
+serif;
+$heading_color: #0e0e0e;
+$title_color: #1b1b1b;
+$content_color: #6D6A6A;
+$subtitle_color: #AFAFAF;
+$btn_color: #f34f3f;
+$main_color: #ffffff;
+$footer_background_color: #fefaf3;
+$header_background_color: #FAFAF9;
+$title_background_color: #f6f6f6;
+$heading_fontSize: 50px;
+$title_fontSize: 12px;
+$content_fontSize: 14px;
+$fontSize: 17px;
+$border: 1px solid #eee;
 
 * {
     padding: 0;
@@ -347,17 +367,19 @@ main {
                         padding: 0px;
                         margin: 0px;
                         border: 1px solid #eee;
-                       
                         color: #1b1b1b;
-                        
-                       
                         letter-spacing: 0.9px;
                         font-size: 12px;
                         font-weight: 500;
                         font-family: "Montserrat", sans-serif;
-                       
+
                         padding: 20px 45px;
                         cursor: pointer;
+                    }
+
+                    .desc {
+                        background-color: #f34f3f;
+                        color: white;
                     }
                 }
 
@@ -406,8 +428,343 @@ main {
                         }
                     }
                 }
+
+                .third {
+                    padding-top: 25px;
+
+                    .reviews {
+                        .title {
+                            h3 {
+                                margin-bottom: 40px;
+                                font-family: "Playfair Display", serif;
+                                font-size: 30px;
+                                color: #1b1b1b;
+                                line-height: 1.4em;
+                                font-weight: 400;
+                            }
+                        }
+
+                        .about {
+                            .person {
+                                .col-lg-1 {
+
+                                    img {
+                                        width: 72px;
+                                        padding-top: 6px;
+                                    }
+                                }
+
+                                .col-lg-11 {
+
+
+
+                                    span {
+                                        color: #1b1b1b;
+                                        font-weight: 500;
+                                        letter-spacing: .1em;
+                                        text-transform: uppercase;
+                                        line-height: 15px;
+                                        font-size: 12px;
+                                        font-family: "Montserrat", sans-serif
+                                    }
+
+                                    .date {
+                                        color: #6D6A6A;
+                                        padding-left: 10px;
+                                        font-family: "Montserrat", sans-serif;
+                                        font-size: 12px;
+                                    }
+
+                                    p {
+                                        margin: 0px;
+                                        padding-top: 7px;
+                                        font-family: "Lora", serif;
+                                        color: #6D6A6A;
+                                        font-size: 15px;
+                                        line-height: 25px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .add_reviews {
+                        padding: 40px 0;
+
+                        h2 {
+                            margin-bottom: 20px;
+                            font-family: $heading_fontFamily;
+                            font-size: $heading_fontSize - 20;
+                            color: $title_color;
+                            line-height: 1.4em;
+                            font-weight: 400;
+                        }
+
+                        .review {
+                            p {
+                                margin-bottom: 5px;
+                            }
+
+                            form {
+                                div {
+                                    label {
+                                        margin-top: 10px;
+                                        font-family: "Lora", serif;
+                                        color: #6D6A6A;
+                                        font-size: 15px;
+                                        line-height: 25px;
+                                    }
+
+                                    textarea {
+                                        width: 100%;
+                                        border: $border;
+                                    }
+
+                                    input {
+                                        border: $border;
+                                        border-radius: 0px;
+                                        padding: 30px;
+                                    }
+                                }
+
+                                input.button {
+                                    color: $main_color;
+                                    background-color: $btn_color;
+                                    text-transform: uppercase;
+                                    font-size: $title_fontSize;
+                                    font-family: $title_fontFamily;
+                                    line-height: 1.833em;
+                                    letter-spacing: .1em;
+                                    font-weight: 500;
+                                    border: none;
+                                    padding: 15px 45px;
+                                    margin-top: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
 
+    }
+
+    #products {
+        .products {
+            transition: 0.4s;
+
+            .col-lg-3 {
+
+                .mycard {
+                    transform: 0.4s;
+
+                    // .cardd-header {
+                    //     a {
+                    //         img {
+                    //             overflow: hidden;
+                    //             &:hover {
+                    //                 transform: scale(1.05) translateZ(0);
+                    //             }
+                    //         }
+
+
+                    //     }
+                    //     a {
+                    //         img {
+                    //             width: 100%;
+                    //             transform: scale(1) translateZ(0);
+                    //             transition: transform 0.3s ease;
+                    //         }
+                    //     }
+
+                    // }
+
+                    .card-body {
+                        .name {
+                            a {
+                                text-decoration: none;
+                                color: #1b1b1b;
+                                margin: 0px;
+                                padding: 0px;
+                            }
+
+
+                        }
+
+                        .price-cards {
+                            .add {
+                                a {
+                                    text-decoration: none;
+                                    color: #6d6a6a;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    text-align: center;
+                                }
+                            }
+
+                            .price {
+                                a {
+                                    text-decoration: none;
+                                    color: #6d6a6a;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .card-body {
+                            text-align: center;
+
+                            .price-cards {
+
+                                .price {
+
+                                    transform: translateX(33px);
+                                    opacity: 0;
+
+                                }
+
+                                .add {
+                                    opacity: 1;
+                                    transform: translateX(10px);
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+                .card-body {
+                    text-align: center;
+
+                    .name {
+
+                        font-size: 13px;
+                    }
+
+                    .price-cards {
+                        display: flex;
+                        justify-content: center;
+
+                        .price {
+                            color: #757575;
+                            font-size: 13px;
+                            transform: translateX(-33px);
+                            transition: 0.4s;
+
+
+                        }
+
+                        .add {
+                            color: #757575;
+                            font-size: 13px;
+                            transform: translateX(-50px);
+                            opacity: 0;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+footer {
+    margin-top: 90px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #fefaf3;
+
+
+    .top-footer {
+        .col-3 {
+
+            .title {
+                padding-top: 50px;
+            }
+
+            .list {
+                padding-top: 30px;
+
+                ul {
+                    list-style: none;
+                    padding: 0px;
+
+                    li {
+
+                        a {
+                            text-decoration: none;
+                            color: #8b8b8b;
+                            font-size: 12px;
+
+                            &:hover {
+                                color: #f34f3f;
+
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    .bottom-footer {
+
+        .line {
+            border-top: 1px solid #8b8b8b;
+        }
+
+        .container {
+            .rights {
+                span {
+                    font-size: 12px;
+                    color: #afafaf;
+
+                    a {
+                        text-decoration: none;
+                        color: #6d6a6a;
+
+                        &:hover {
+                            color: #f34f3f;
+                        }
+                    }
+                }
+            }
+
+            .insta-face {
+                .insta {
+                    a {
+                        font-size: 12px;
+                        text-decoration: none;
+                        color: #8b8b8b;
+
+                        &:hover {
+                            color: #f34f3f;
+                        }
+                    }
+
+                }
+
+                .face {
+                    a {
+                        font-size: 12px;
+                        text-decoration: none;
+                        color: #8b8b8b;
+                        padding-left: 25px;
+
+                        &:hover {
+                            color: #f34f3f;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

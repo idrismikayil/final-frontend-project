@@ -313,6 +313,11 @@ main #click .container .buttons ul li {
   cursor: pointer;
 }
 
+main #click .container .buttons ul .desc {
+  background-color: #f34f3f;
+  color: white;
+}
+
 main #click .container .content .first {
   padding-top: 25px;
 }
@@ -354,5 +359,253 @@ main #click .container .content .second p span {
   padding-left: 10px;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
+}
+
+main #click .container .content .third {
+  padding-top: 25px;
+}
+
+main #click .container .content .third .reviews .title h3 {
+  margin-bottom: 40px;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: #1b1b1b;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+
+main #click .container .content .third .reviews .about .person .col-lg-1 img {
+  width: 72px;
+  padding-top: 6px;
+}
+
+main #click .container .content .third .reviews .about .person .col-lg-11 span {
+  color: #1b1b1b;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  line-height: 15px;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+}
+
+main #click .container .content .third .reviews .about .person .col-lg-11 .date {
+  color: #6D6A6A;
+  padding-left: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+main #click .container .content .third .reviews .about .person .col-lg-11 p {
+  margin: 0px;
+  padding-top: 7px;
+  font-family: "Lora", serif;
+  color: #6D6A6A;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+main #click .container .content .third .add_reviews {
+  padding: 40px 0;
+}
+
+main #click .container .content .third .add_reviews h2 {
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: #1b1b1b;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+
+main #click .container .content .third .add_reviews .review p {
+  margin-bottom: 5px;
+}
+
+main #click .container .content .third .add_reviews .review form div label {
+  margin-top: 10px;
+  font-family: "Lora", serif;
+  color: #6D6A6A;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+main #click .container .content .third .add_reviews .review form div textarea {
+  width: 100%;
+  border: 1px solid #eee;
+}
+
+main #click .container .content .third .add_reviews .review form div input {
+  border: 1px solid #eee;
+  border-radius: 0px;
+  padding: 30px;
+}
+
+main #click .container .content .third .add_reviews .review form input.button {
+  color: #ffffff;
+  background-color: #f34f3f;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.833em;
+  letter-spacing: .1em;
+  font-weight: 500;
+  border: none;
+  padding: 15px 45px;
+  margin-top: 20px;
+}
+
+main #products .products {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main #products .products .col-lg-3 .mycard {
+  -webkit-transform: 0.4s;
+          transform: 0.4s;
+}
+
+main #products .products .col-lg-3 .mycard .card-body .name a {
+  text-decoration: none;
+  color: #1b1b1b;
+  margin: 0px;
+  padding: 0px;
+}
+
+main #products .products .col-lg-3 .mycard .card-body .price-cards .add a {
+  text-decoration: none;
+  color: #6d6a6a;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+main #products .products .col-lg-3 .mycard .card-body .price-cards .price a {
+  text-decoration: none;
+  color: #6d6a6a;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+main #products .products .col-lg-3 .mycard:hover .card-body {
+  text-align: center;
+}
+
+main #products .products .col-lg-3 .mycard:hover .card-body .price-cards .price {
+  -webkit-transform: translateX(33px);
+          transform: translateX(33px);
+  opacity: 0;
+}
+
+main #products .products .col-lg-3 .mycard:hover .card-body .price-cards .add {
+  opacity: 1;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+main #products .products .col-lg-3 .card-body {
+  text-align: center;
+}
+
+main #products .products .col-lg-3 .card-body .name {
+  font-size: 13px;
+}
+
+main #products .products .col-lg-3 .card-body .price-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #products .products .col-lg-3 .card-body .price-cards .price {
+  color: #757575;
+  font-size: 13px;
+  -webkit-transform: translateX(-33px);
+          transform: translateX(-33px);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main #products .products .col-lg-3 .card-body .price-cards .add {
+  color: #757575;
+  font-size: 13px;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer {
+  margin-top: 90px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #fefaf3;
+}
+
+footer .top-footer .col-3 .title {
+  padding-top: 50px;
+}
+
+footer .top-footer .col-3 .list {
+  padding-top: 30px;
+}
+
+footer .top-footer .col-3 .list ul {
+  list-style: none;
+  padding: 0px;
+}
+
+footer .top-footer .col-3 .list ul li a {
+  text-decoration: none;
+  color: #8b8b8b;
+  font-size: 12px;
+}
+
+footer .top-footer .col-3 .list ul li a:hover {
+  color: #f34f3f;
+}
+
+footer .bottom-footer .line {
+  border-top: 1px solid #8b8b8b;
+}
+
+footer .bottom-footer .container .rights span {
+  font-size: 12px;
+  color: #afafaf;
+}
+
+footer .bottom-footer .container .rights span a {
+  text-decoration: none;
+  color: #6d6a6a;
+}
+
+footer .bottom-footer .container .rights span a:hover {
+  color: #f34f3f;
+}
+
+footer .bottom-footer .container .insta-face .insta a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #8b8b8b;
+}
+
+footer .bottom-footer .container .insta-face .insta a:hover {
+  color: #f34f3f;
+}
+
+footer .bottom-footer .container .insta-face .face a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #8b8b8b;
+  padding-left: 25px;
+}
+
+footer .bottom-footer .container .insta-face .face a:hover {
+  color: #f34f3f;
 }
 /*# sourceMappingURL=main.css.map */

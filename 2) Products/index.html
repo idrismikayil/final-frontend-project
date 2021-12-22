@@ -249,30 +249,252 @@
             <div class="container">
                 <div class="buttons">
                     <ul class="d-flex">
-                        <li>DESCRIPTION</li>
-                        <li>ADDITIONAL INFORMATION</li>
-                        <li>REVIEWS</li>
+                        <li class="desc">DESCRIPTION</li>
+                        <li class="add">ADDITIONAL INFORMATION</li>
+                        <li class="rev">REVIEWS</li>
                     </ul>
                 </div>
                 <div class="content">
                     <div class="first">
                         <h3>The power of flowers</h3>
-                        <p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante</p>
+                        <p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut
+                            metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+                            Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus
+                            eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
+                            Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                        </p>
                     </div>
-                    <div class="second">
-                        <p ><strong>Weight:</strong> <span>1 kg</span></p>
-                        <p ><strong>Dimensions:</strong> <span>30 x 30 x 50 cm</span></p>
+                    <div class="second d-none">
+                        <p><strong>Weight:</strong> <span>1 kg</span></p>
+                        <p><strong>Dimensions:</strong> <span>30 x 30 x 50 cm</span></p>
+                    </div>
+                    <div class="third d-none">
+                        <div class="reviews">
+                            <div class="title">
+                                <h3>Reviews</h3>
+                            </div>
+                            <div class="about">
+                                <div class="person">
+                                    <div class="row">
+                                        <div class="col-lg-1">
+                                            <img src="assets/images/h3-team-img-2.png" alt="">
+                                        </div>
+                                        <div class="col-lg-11">
+                                            <span>JOSHUA GARCIA</span><span class="date"> 27.04.2018</span>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                                                ligula eget dolor. Aenean massa. Cum sociis Theme natoque <br> penatibus
+                                                et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="person pt-4">
+                                    <div class="row">
+                                        <div class="col-lg-1">
+                                            <img src="assets/images/h3-team-img-3.png" alt="">
+                                        </div>
+                                        <div class="col-lg-11">
+                                            <span>JOAN STANLEY</span><span class="date"> 27.04.2018</span>
+                                            <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam
+                                                semper libero, sit amet adipiscing sem neque sed <br> ipsum. Nam quam
+                                                nunc, blandit vel, luctus pulvinar, hendrerit</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add_reviews">
+                            <h2>Add a review</h2>
+                            <div class="review">
+                                <p>Your email address will not be published. Required fields are marked
+                                    <sup>*</sup>
+                                </p>
+                                <form action="#" class="form-group">
+                                    <div>
+                                        <label>Your review <sup>*</sup></label><br>
+                                        <textarea name="your_review" id="your_review" cols="45" rows="8"
+                                            aria-required="true" required></textarea>
+                                    </div>
+                                    <div>
+                                        <label>Name<sup>*</sup></label>
+                                        <input class="form-control" type="text" id="author" name="author" size="30"
+                                            aria-required="true" required>
+                                    </div>
+                                    <div>
+                                        <label>Email<sup>*</sup></label>
+                                        <input class="form-control" type="email" id="email" name="email" size="30"
+                                            aria-required="true" required>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" value="yes" id="" name="">
+                                    </div>
+                                    <p>Save my name, email, and website in this browser for the next time I
+                                        comment.</p>
+                                    <input class="button" type="submit" name="submit" id="submit" value="submit">
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
+        </section>
+        <section id="products">
+            <div class="products all">
+                   <div class="container">
+                       <div class="row">
+                        <div class="col-lg-3">
+                            <div class="product mycard">
+                                <div class="cardd-header">
+                                    <a href=""><img src="assets/images/shop-3-img.jpg" width="100%" alt=""></a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="name"><a href="">CACTUS IN ORANGE</a></div>
+                                    <div class="price-cards">
+                                        <div class="add"><a href="">Add to cart</a></div>
+                                        <div class="price"><a href=""><del>259$</del> 159$</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="product mycard">
+                                <div class="cardd-header">
+                                    <a href=""> <img src="assets/images/shop-1-img.jpg" width="100%" alt=""></a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="name"><a href="">SCHEFFLERA</a></div>
+                                    <div class="price-cards">
+                                        <div class="add"><a href="">Add to cart</a></div>
+                                        <div class="price"><a href="">259$</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="product mycard">
+                                <div class="cardd-header">
+                                    <a href=""><img src="assets/images/shop-9-img.jpg" width="100%" alt=""></a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="name"><a href="">ROCK SOAPWORT</a></div>
+                                    <div class="price-cards">
+                                        <div class="add"><a href="">View products</a></div>
+                                        <div class="price"><a href="">259$</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="product mycard">
+                                <div class="cardd-header">
+                                    <a href=""> <img src="assets/images/shop-5-img.jpg" width="100%" alt=""></a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="name"><a href="">WILD CACTUS</a></div>
+                                    <div class="price-cards">
+                                        <div class="add"><a href="">Add to cart</a></div>
+                                        <div class="price"><a href=""><del>259$</del> 159$</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                   </div>
+                </div>
+            </div>
         </section>
     </main>
 
+    <footer>
+        <div class="container">
+            <div class="top-footer">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="title">
+                            <h6>
+                                CUSTOMER SERVICE
+                            </h6>
+                        </div>
+                        <div class="list">
+                            <ul>
+                                <li><a href="">Help & Contact Us</a></li>
+                                <li><a href="">Returns & Refunds</a></li>
+                                <li><a href="">Online Stores</a></li>
+                                <li><a href="">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="title">
+                            <h6>COMPANY</h6>
+                        </div>
+                        <div class="list">
+                            <ul>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Order Tracking</a></li>
+                                <li><a href="">FAQ Page</a></li>
+                                <li><a href="">Contact Us</a></li>
+                                <li><a href="">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="title">
+                            <h6>SOCIAL MEDIA</h6>
+                        </div>
+                        <div class="list">
+                            <ul>
+                                <li><a href="">Twitter</a></li>
+                                <li><a href="">Instagram</a></li>
+                                <li><a href="">Tumblr</a></li>
+                                <li><a href="">Pinterest</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="title">
+                            <h6>ARCHIVE</h6>
+                        </div>
+                        <div class="list">
+                            <ul>
+                                <li><a href="">Designer Shoes</a></li>
+                                <li><a href="">Gallery</a></li>
+                                <li><a href="">Pricing</a></li>
+                                <li><a href="">Feature Index</a></li>
+                                <li><a href="">Login</a></li>
+                                <li><a href="">Help & Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <hr class="line">
+            </div>
+            <div class="container d-flex justify-content-between">
+                <div class="rights">
+                    <span>© 2018 <a href="">Qode Interactive</a>, All Rights Reserved</span>
+                </div>
+                <div class="cards-image">
+                    <a href=""><img src="assets/images/footer-bottom-1.png" alt=""></a>
+                </div>
+                <div class="insta-face d-flex">
+                    <div class="insta">
+                        <a href="">INSTAGRAM</a>
+                    </div>
+                    <div class="face">
+                        <a href="">FACEBOOK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
