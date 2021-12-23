@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i|Montserrat:400,500|Playfair+Display&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a .up {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  width: 40px;
+  height: 40px;
+  background-color: #f34f3f;
+}
+
+a .up i {
+  position: absolute;
+  left: 9px;
+  top: 7px;
+  font-size: 30px;
+  color: white;
+}
+
+nav {
+  background-color: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  height: 70px;
+}
+
+nav .container .logo img {
+  width: 205px;
+}
+
+nav .container .options {
+  padding: 0;
+}
+
+nav .container .options ul {
+  margin: 0px;
+  padding: 0;
+}
+
+nav .container .options ul li {
+  list-style: none;
+  padding-right: 8%;
+  padding-top: 5px;
+  font-size: 12px;
+  font-weight: 550;
+  color: #1b1b1b;
+  cursor: pointer;
+}
+
+nav .container .options ul li .second {
+  position: absolute;
+  display: block;
+  height: 0px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+}
+
+nav .container .options ul li .second ul {
+  padding-top: 15px;
+}
+
+nav .container .options ul li .second ul li {
+  padding-bottom: 15px;
+}
+
+nav .container .options ul li .second ul li a {
+  text-decoration: none;
+  color: #737373;
+}
+
+nav .container .options ul li:hover .second {
+  margin-top: 25px;
+  height: 283px;
+  width: 150px;
+  visibility: visible;
+  opacity: 1;
+  overflow: visible;
+  background-color: white;
+  padding-left: 15px;
+}
+
+nav .container .options ul li:hover #pages {
+  margin-top: 25px;
+  height: 130px;
+  width: 150px;
+  visibility: visible;
+  opacity: 1;
+  overflow: visible;
+  background-color: white;
+  padding-left: 15px;
+}
+
+nav .container .options ul li:hover #shop {
+  margin-top: 25px;
+  padding-top: 17px;
+  height: 370px;
+  width: 90%;
+  visibility: visible;
+  opacity: 1;
+  overflow: visible;
+  background-color: white;
+  padding-left: 15px;
+  left: 5%;
+}
+
+nav .container .options ul li:hover #portfolio {
+  margin-top: 25px;
+  height: 200px;
+  width: 150px;
+  visibility: visible;
+  opacity: 1;
+  overflow: visible;
+  background-color: white;
+  padding-left: 15px;
+}
+
+nav .container .options ul li:hover #blog {
+  margin-top: 25px;
+  height: 130px;
+  width: 150px;
+  visibility: visible;
+  opacity: 1;
+  overflow: visible;
+  background-color: white;
+  padding-left: 15px;
+}
+
+nav .container .options ul li:hover #elements {
+  margin-top: 25px;
+  height: 170px;
+  width: 150px;
+  visibility: visible;
+  opacity: 1;
+  overflow: visible;
+  background-color: white;
+  padding-left: 15px;
+}
+
+nav .container .mix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+nav .container .mix .search-icon {
+  padding-right: 25px;
+}
+
+nav .container .mix .basket-icon {
+  padding-right: 25px;
+}
+
+.box {
+  width: 100%;
+  background-color: white;
+  height: 1px;
+  padding-top: 70px;
+}
+
+main #title_wrapper {
+  background: #FAFAF9;
+  padding: 80px 0;
+}
+
+main #title_wrapper .container .title h1 {
+  color: #0e0e0e;
+  font-size: 50px;
+  font-family: 'Playfair Display', serif;
+}
+
+main #first-acc {
+  padding-top: 50px;
+}
+
+main #first-acc .acc .buttons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+main #first-acc .acc .buttons ul li {
+  border: 1px solid #eee;
+  padding: 15px 45px;
+  color: #1b1b1b;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  line-height: 2em;
+  font-weight: 500;
+  letter-spacing: .1em;
+  cursor: pointer;
+}
+
+main #first-acc .acc .contents .content {
+  border: 1px solid #eee;
+}
+
+main #first-acc .acc .contents .content p {
+  padding: 75px 47px;
+  color: #6d6a6a;
+  font-family: 'Lora', serif;
+  font-size: 15px;
+  margin: 0px;
+}
+
+main #second-acc {
+  padding-top: 75px;
+  padding-bottom: 25px;
+}
+
+main #second-acc .container {
+  padding: 0px;
+}
+
+main #second-acc .container .buttons ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+main #second-acc .container .buttons ul li {
+  padding: 0px;
+  margin: 0px;
+  color: #1b1b1b;
+  letter-spacing: 0.9px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px 55px;
+  padding-left: 0px;
+  cursor: pointer;
+}
+
+main #second-acc .container .buttons ul .desc {
+  background-color: #f34f3f;
+  color: white;
+}
+
+main #second-acc .container .contents {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+main #second-acc .container .contents p {
+  padding: 75px 0px;
+  font-family: Lora, serif;
+  color: #6d6a6a;
+  font-size: 15px;
+  margin: 0px;
+}
+
+main #third-acc {
+  padding-top: 75px;
+  padding-bottom: 45px;
+}
+
+main #third-acc .buttons {
+  padding: 0px;
+}
+
+main #third-acc .buttons ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+main #third-acc .buttons ul li {
+  border: 1px solid #eee;
+  padding: 15px 45px;
+  color: #1b1b1b;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  line-height: 2em;
+  font-weight: 500;
+  letter-spacing: .1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #third-acc .contents {
+  border: 1px solid #eee;
+}
+
+main #third-acc .contents p {
+  padding: 12px 32px;
+  font-family: Lora, serif;
+  color: #6d6a6a;
+  font-size: 15px;
+  margin: 0px;
+}
+
+footer {
+  margin-top: 90px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #fefaf3;
+}
+
+footer .top-footer .col-3 .title {
+  padding-top: 50px;
+}
+
+footer .top-footer .col-3 .list {
+  padding-top: 30px;
+}
+
+footer .top-footer .col-3 .list ul {
+  list-style: none;
+  padding: 0px;
+}
+
+footer .top-footer .col-3 .list ul li a {
+  text-decoration: none;
+  color: #8b8b8b;
+  font-size: 12px;
+}
+
+footer .top-footer .col-3 .list ul li a:hover {
+  color: #f34f3f;
+}
+
+footer .bottom-footer .line {
+  border-top: 1px solid #8b8b8b;
+}
+
+footer .bottom-footer .container .rights span {
+  font-size: 12px;
+  color: #afafaf;
+}
+
+footer .bottom-footer .container .rights span a {
+  text-decoration: none;
+  color: #6d6a6a;
+}
+
+footer .bottom-footer .container .rights span a:hover {
+  color: #f34f3f;
+}
+
+footer .bottom-footer .container .insta-face .insta a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #8b8b8b;
+}
+
+footer .bottom-footer .container .insta-face .insta a:hover {
+  color: #f34f3f;
+}
+
+footer .bottom-footer .container .insta-face .face a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #8b8b8b;
+  padding-left: 25px;
+}
+
+footer .bottom-footer .container .insta-face .face a:hover {
+  color: #f34f3f;
+}
+/*# sourceMappingURL=main.css.map */
