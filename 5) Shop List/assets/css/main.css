@@ -1,0 +1,491 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i|Montserrat:400,500|Playfair+Display&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a .up {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  width: 40px;
+  height: 40px;
+  background-color: #f34f3f;
+}
+
+a .up i {
+  position: absolute;
+  left: 9px;
+  top: 7px;
+  font-size: 30px;
+  color: white;
+}
+
+nav {
+  background-color: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+}
+
+nav .container .logo img {
+  width: 205px;
+}
+
+nav .container .options {
+  padding: 0;
+}
+
+nav .container .options ul {
+  margin: 0px;
+  padding: 0;
+}
+
+nav .container .options ul li {
+  list-style: none;
+  padding-right: 8%;
+  padding-top: 5px;
+  font-size: 12px;
+  font-weight: 550;
+  color: #1b1b1b;
+  cursor: pointer;
+}
+
+nav .container .options ul li .second {
+  position: absolute;
+  display: block;
+  height: 0px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+}
+
+nav .container .options ul li .second ul {
+  padding-top: 15px;
+}
+
+nav .container .options ul li .second ul li {
+  padding-bottom: 15px;
+}
+
+nav .container .options ul li .second ul li a {
+  text-decoration: none;
+  color: #737373;
+}
+
+nav .container .options ul li:hover .second {
+  margin-top: 25px;
+  height: 283px;
+  width: 150px;
+  visibility: visible;
+  opacity: 1;
+  overflow: visible;
+  background-color: white;
+  padding-left: 15px;
+}
+
+nav .container .options ul li:hover #pages {
+  margin-top: 25px;
+  height: 130px;
+  width: 150px;
+  visibility: visible;
+  opacity: 1;
+  overflow: visible;
+  background-color: white;
+  padding-left: 15px;
+}
+
+nav .container .options ul li:hover #shop {
+  margin-top: 25px;
+  padding-top: 17px;
+  height: 370px;
+  width: 90%;
+  visibility: visible;
+  opacity: 1;
+  overflow: visible;
+  background-color: white;
+  padding-left: 15px;
+  left: 5%;
+}
+
+nav .container .options ul li:hover #portfolio {
+  margin-top: 25px;
+  height: 200px;
+  width: 150px;
+  visibility: visible;
+  opacity: 1;
+  overflow: visible;
+  background-color: white;
+  padding-left: 15px;
+}
+
+nav .container .options ul li:hover #blog {
+  margin-top: 25px;
+  height: 130px;
+  width: 150px;
+  visibility: visible;
+  opacity: 1;
+  overflow: visible;
+  background-color: white;
+  padding-left: 15px;
+}
+
+nav .container .options ul li:hover #elements {
+  margin-top: 25px;
+  height: 170px;
+  width: 150px;
+  visibility: visible;
+  opacity: 1;
+  overflow: visible;
+  background-color: white;
+  padding-left: 15px;
+}
+
+nav .container .mix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+nav .container .mix .search-icon {
+  padding-right: 25px;
+}
+
+nav .container .mix .basket-icon {
+  padding-right: 25px;
+}
+
+main #title_wrapper {
+  background: #FAFAF9;
+  padding: 80px 0;
+}
+
+main #title_wrapper .container .title h1 {
+  color: #0e0e0e;
+  font-size: 50px;
+  font-family: 'Playfair Display', serif;
+}
+
+main #products {
+  padding-top: 150px;
+}
+
+main #products .products {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  position: relative;
+}
+
+main #products .products:hover .card-body {
+  opacity: 0.85;
+}
+
+main #products .products .col-lg-3 .mycard {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  position: relative;
+}
+
+main #products .products .col-lg-3 .mycard:hover .card-body {
+  opacity: 0.85;
+}
+
+main #products .products .col-lg-3 .mycard .card-header {
+  position: relative;
+}
+
+main #products .products .col-lg-3 .mycard .card-body {
+  cursor: pointer;
+  padding: 100px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f34f3f;
+  opacity: 0;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+main #products .products .col-lg-3 .mycard .card-body .content {
+  opacity: 1;
+}
+
+main #products .products .col-lg-3 .mycard .card-body .content h6 a {
+  font-family: 'Montserrat', sans-serif;
+  color: #1b1b1b;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+main #products .products .col-lg-3 .mycard .card-body .content span {
+  font-family: 'Montserrat', sans-serif;
+  color: #AFAFAF;
+  font-size: 12px;
+}
+
+main #products .products .col-lg-3 .mycard .card-body .content button.add_to_card {
+  background-color: #f34f3f;
+  border: 1px solid transparent;
+  padding: 13px 32px;
+}
+
+main #products .products .col-lg-3 .mycard .card-body .content button.add_to_card a {
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.833em;
+  letter-spacing: .1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+main #product_slider {
+  padding-top: 150px;
+}
+
+main #product_slider .top h2 {
+  color: #1b1b1b;
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: 2em;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+main #product_slider .products {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main #product_slider .products .row .ccol {
+  padding-right: 50px;
+}
+
+main #product_slider .products .row .ccol .mycard .card-body .name a {
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+main #product_slider .products .row .ccol .mycard .card-body .price-cards .add a {
+  text-decoration: none;
+  color: #6d6a6a;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+main #product_slider .products .row .ccol .mycard .card-body .price-cards .price a {
+  text-decoration: none;
+  color: #6d6a6a;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+main #product_slider .products .row .ccol .mycard:hover .card-body {
+  text-align: center;
+}
+
+main #product_slider .products .row .ccol .mycard:hover .card-body .price-cards .price {
+  -webkit-transform: translateX(33px);
+          transform: translateX(33px);
+  opacity: 0;
+}
+
+main #product_slider .products .row .ccol .mycard:hover .card-body .price-cards .add {
+  opacity: 1;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+main #product_slider .products .row .ccol .card-body {
+  text-align: center;
+}
+
+main #product_slider .products .row .ccol .card-body .name {
+  font-size: 13px;
+}
+
+main #product_slider .products .row .ccol .card-body .price-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #product_slider .products .row .ccol .card-body .price-cards .price {
+  color: #757575;
+  font-size: 13px;
+  -webkit-transform: translateX(-33px);
+          transform: translateX(-33px);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main #product_slider .products .row .ccol .card-body .price-cards .add {
+  color: #757575;
+  font-size: 13px;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main #products-2 {
+  padding-top: 150px;
+}
+
+main #products-2 .products {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main #products-2 .products .col-lg-2 .mycard {
+  -webkit-transform: 0.4s;
+          transform: 0.4s;
+}
+
+main #products-2 .products .col-lg-2 .mycard .cardd-header a img {
+  width: 100%;
+  -webkit-transform: scale(1) translateZ(0);
+          transform: scale(1) translateZ(0);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  overflow: hidden;
+}
+
+main #products-2 .products .col-lg-2 .mycard .cardd-header a img:hover {
+  -webkit-transform: scale(1.05) translateZ(0);
+          transform: scale(1.05) translateZ(0);
+}
+
+main #products-2 .products .col-lg-2 .mycard .card-body .name a {
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #products-2 .products .col-lg-2 .mycard .card-body .price a {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  color: #AFAFAF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer {
+  margin-top: 90px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #fefaf3;
+}
+
+footer .top-footer .col-lg-3 .title {
+  padding-top: 50px;
+}
+
+footer .top-footer .col-lg-3 .list {
+  padding-top: 30px;
+}
+
+footer .top-footer .col-lg-3 .list ul {
+  list-style: none;
+  padding: 0px;
+}
+
+footer .top-footer .col-lg-3 .list ul li a {
+  text-decoration: none;
+  color: #8b8b8b;
+  font-size: 12px;
+}
+
+footer .top-footer .col-lg-3 .list ul li a:hover {
+  color: #f34f3f;
+}
+
+footer .bottom-footer .line {
+  border-top: 1px solid #8b8b8b;
+}
+
+footer .bottom-footer .container .rights span {
+  font-size: 12px;
+  color: #afafaf;
+}
+
+footer .bottom-footer .container .rights span a {
+  text-decoration: none;
+  color: #6d6a6a;
+}
+
+footer .bottom-footer .container .rights span a:hover {
+  color: #f34f3f;
+}
+
+footer .bottom-footer .container .insta-face .insta a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #8b8b8b;
+}
+
+footer .bottom-footer .container .insta-face .insta a:hover {
+  color: #f34f3f;
+}
+
+footer .bottom-footer .container .insta-face .face a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #8b8b8b;
+  padding-left: 25px;
+}
+
+footer .bottom-footer .container .insta-face .face a:hover {
+  color: #f34f3f;
+}
+/*# sourceMappingURL=main.css.map */

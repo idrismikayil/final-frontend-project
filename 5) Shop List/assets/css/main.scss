@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i|Montserrat:400,500|Playfair+Display&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    .up {
+        position: fixed;
+        bottom: 35px;
+        right: 35px;
+        width: 40px;
+        height: 40px;
+        background-color: #f34f3f;
+
+        i {
+            position: absolute;
+            left: 9px;
+            top: 7px;
+            font-size: 30px;
+            color: white;
+        }
+    }
+}
+
+nav {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    // position: fixed;
+    height: 70px;
+
+    .container {
+
+        .logo {
+            // border: 1px solid black;
+
+            img {
+                width: 205px;
+            }
+
+        }
+
+        .options {
+            // border: 1px solid black;
+            padding: 0;
+
+            ul {
+                margin: 0px;
+                padding: 0;
+
+                li {
+                    list-style: none;
+                    padding-right: 8%;
+                    padding-top: 5px;
+                    font-size: 12px;
+                    font-weight: 550;
+                    color: #1b1b1b;
+                    cursor: pointer;
+
+                    .second {
+                        position: absolute;
+                        display: block;
+                        height: 0px;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: .2s all;
+
+                        ul {
+                            padding-top: 15px;
+
+                            li {
+                                padding-bottom: 15px;
+
+                                a {
+                                    text-decoration: none;
+                                    color: #737373;
+                                }
+                            }
+                        }
+
+                    }
+
+                    &:hover {
+                        .second {
+                            margin-top: 25px;
+                            height: 283px;
+                            width: 150px;
+                            visibility: visible;
+                            opacity: 1;
+                            overflow: visible;
+                            background-color: white;
+                            padding-left: 15px;
+                        }
+
+                        #pages {
+                            margin-top: 25px;
+                            height: 130px;
+                            width: 150px;
+                            visibility: visible;
+                            opacity: 1;
+                            overflow: visible;
+                            background-color: white;
+                            padding-left: 15px;
+                        }
+
+                        #shop {
+                            margin-top: 25px;
+                            padding-top: 17px;
+                            height: 370px;
+                            width: 90%;
+                            visibility: visible;
+                            opacity: 1;
+                            overflow: visible;
+                            background-color: white;
+                            padding-left: 15px;
+                            left: 5%;
+
+                        }
+
+                        #portfolio {
+                            margin-top: 25px;
+                            height: 200px;
+                            width: 150px;
+                            visibility: visible;
+                            opacity: 1;
+                            overflow: visible;
+                            background-color: white;
+                            padding-left: 15px;
+
+                        }
+
+                        #blog {
+                            margin-top: 25px;
+                            height: 130px;
+                            width: 150px;
+                            visibility: visible;
+                            opacity: 1;
+                            overflow: visible;
+                            background-color: white;
+                            padding-left: 15px;
+                        }
+
+                        #elements {
+                            margin-top: 25px;
+                            height: 170px;
+                            width: 150px;
+                            visibility: visible;
+                            opacity: 1;
+                            overflow: visible;
+                            background-color: white;
+                            padding-left: 15px;
+                        }
+                    }
+                }
+
+
+
+            }
+        }
+
+        .mix {
+            // border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+
+            .search-icon {
+                padding-right: 25px;
+            }
+
+            .basket-icon {
+                padding-right: 25px;
+            }
+        }
+
+    }
+}
+
+// .box {
+//     width: 100%;
+//     background-color: white;
+//     height: 1px;
+//     padding-top: 70px;
+// }
+
+main {
+
+    #title_wrapper {
+        background: #FAFAF9;
+        padding: 80px 0;
+
+        .container {
+            .title {
+                h1 {
+                    color: #0e0e0e;
+                    font-size: 50px;
+                    font-family: 'Playfair Display', serif;
+                }
+            }
+        }
+    }
+
+    #products {
+
+        padding-top: 150px;
+
+        .products {
+            transition: 0.4s;
+            position: relative;
+
+            &:hover .card-body {
+                opacity: 0.85;
+            }
+
+            .col-lg-3 {
+
+                .mycard {
+                    transition: 0.4s;
+                    position: relative;
+
+                    &:hover .card-body {
+                        opacity: 0.85;
+                    }
+
+                    .card-header {
+                        position: relative;
+
+                    }
+
+                    .card-body {
+                        cursor: pointer;
+                        padding: 100px 0;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: #f34f3f;
+                        opacity: 0;
+                        transition: all .2s ease-out;
+
+                        .content {
+                            opacity: 1;
+
+                            h6 {
+                                a {
+                                    font-family: 'Montserrat', sans-serif;
+                                    color: #1b1b1b;
+                                    ;
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    letter-spacing: 0.1em;
+                                    text-transform: uppercase;
+                                    text-decoration: none;
+                                }
+                            }
+
+                            span {
+                                font-family: 'Montserrat', sans-serif;
+                                color: #AFAFAF;
+                                font-size: 12px;
+                            }
+
+                            button.add_to_card {
+                                background-color: #f34f3f;
+                                border: 1px solid transparent;
+                                padding: 13px 32px;
+
+                                a {
+                                    color: #ffffff;
+                                    font-size: 12px;
+                                    font-family: 'Montserrat', sans-serif;
+                                    line-height: 1.833em;
+                                    letter-spacing: .1em;
+                                    font-weight: 500;
+                                    text-transform: uppercase;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+
+            }
+
+        }
+    }
+
+    #product_slider {
+
+        padding-top: 150px;
+
+        .top {
+            h2 {
+                color: #1b1b1b;
+                font-family: Montserrat;
+                font-size: 12px;
+                line-height: 2em;
+                font-weight: 500;
+                letter-spacing: .1em;
+                text-transform: uppercase;
+            }
+        }
+
+        .products {
+            transition: 0.4s;
+
+            .row {
+
+                .ccol {
+
+                    padding-right: 50px;
+
+                    .mycard {
+
+                        .card-body {
+                            .name {
+                                a {
+                                    font-weight: 500;
+                                    letter-spacing: 1px;
+                                    margin-bottom: 10px;
+                                    color: #1b1b1b;
+                                    font-family: "Montserrat", sans-serif;
+                                    font-size: 12px;
+                                    text-decoration: none;
+                                }
+
+                            }
+
+                            .price-cards {
+                                .add {
+                                    a {
+                                        text-decoration: none;
+                                        color: #6d6a6a;
+                                        margin: 0px;
+                                        padding: 0px;
+                                        text-align: center;
+                                    }
+                                }
+
+                                .price {
+                                    a {
+                                        text-decoration: none;
+                                        color: #6d6a6a;
+                                        margin: 0px;
+                                        padding: 0px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            .card-body {
+                                text-align: center;
+
+                                .price-cards {
+
+                                    .price {
+                                        transform: translateX(33px);
+                                        opacity: 0;
+                                    }
+
+                                    .add {
+                                        opacity: 1;
+                                        transform: translateX(10px);
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+                    .card-body {
+                        text-align: center;
+
+                        .name {
+                            font-size: 13px;
+                        }
+
+                        .price-cards {
+                            display: flex;
+                            justify-content: center;
+
+                            .price {
+                                color: #757575;
+                                font-size: 13px;
+                                transform: translateX(-33px);
+                                transition: 0.4s;
+                            }
+
+                            .add {
+                                color: #757575;
+                                font-size: 13px;
+                                transform: translateX(-50px);
+                                opacity: 0;
+                                transition: 0.3s;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    #products-2 {
+        padding-top: 150px;
+
+        .products {
+            transition: 0.4s;
+
+            .col-lg-2 {
+
+                .mycard {
+                    transform: 0.4s;
+
+                    .cardd-header {
+                        a {
+
+                            img {
+                                width: 100%;
+                                transform: scale(1) translateZ(0);
+                                transition: transform 0.3s ease;
+                                overflow: hidden;
+
+                                &:hover {
+                                    transform: scale(1.05) translateZ(0);
+                                }
+                            }
+
+                        }
+
+                    }
+
+                    .card-body {
+                        .name {
+                            a {
+                                font-weight: 500;
+                                letter-spacing: 1px;
+                                margin-bottom: 10px;
+                                color: #1b1b1b;
+                                font-family: "Montserrat", sans-serif;
+                                font-size: 12px;
+                                text-decoration: none;
+                                display: flex;
+                                justify-content: center;
+                            }
+                        }
+
+                        .price {
+                            a {
+                                text-decoration: none;
+                                margin: 0px;
+                                padding: 0px;
+                                text-align: center;
+                                color: #AFAFAF;
+                                font-family: "Montserrat", sans-serif;
+                                font-size: 12px;
+                                display: flex;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+
+    }
+}
+
+footer {
+
+    margin-top: 90px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #fefaf3;
+
+    .top-footer {
+        .col-lg-3 {
+
+            .title {
+                padding-top: 50px;
+            }
+
+            .list {
+                padding-top: 30px;
+
+                ul {
+                    list-style: none;
+                    padding: 0px;
+
+                    li {
+
+                        a {
+                            text-decoration: none;
+                            color: #8b8b8b;
+                            font-size: 12px;
+
+                            &:hover {
+                                color: #f34f3f;
+
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    .bottom-footer {
+
+        .line {
+            border-top: 1px solid #8b8b8b;
+        }
+
+        .container {
+            .rights {
+                span {
+                    font-size: 12px;
+                    color: #afafaf;
+
+                    a {
+                        text-decoration: none;
+                        color: #6d6a6a;
+
+                        &:hover {
+                            color: #f34f3f;
+                        }
+                    }
+                }
+            }
+
+            .insta-face {
+                .insta {
+                    a {
+                        font-size: 12px;
+                        text-decoration: none;
+                        color: #8b8b8b;
+
+                        &:hover {
+                            color: #f34f3f;
+                        }
+                    }
+
+                }
+
+                .face {
+                    a {
+                        font-size: 12px;
+                        text-decoration: none;
+                        color: #8b8b8b;
+                        padding-left: 25px;
+
+                        &:hover {
+                            color: #f34f3f;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
