@@ -12,11 +12,14 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Home Page</title>
 </head>
 
 <body>
+
     <a href="#top">
         <div class="up">
             <i class="fas fa-angle-up"></i>
@@ -26,8 +29,8 @@
     <header>
         <nav>
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 logo">
+                <div class="row justify-content-between">
+                    <div class="col-3 logo">
                         <img src="assets/images/WhatsApp Image 2021-12-21 at 2.49.34 PM.jpeg" alt="">
                     </div>
                     <div class="col-lg-7 options">
@@ -163,37 +166,165 @@
                         </div>
                         <div class="basket-icon">
                             <i class="fas fa-shopping-bag"></i>
+                            <span id="count_product">0</span>
                         </div>
-                        <div class="cart">
-                            <span>CART (0$)</span>
+                        <div class="cart-price">
+                            <span>CART </span>
+                            <span id="cart-price"></span>
+                        </div>
+                    </div>
+                    <div class="col-1 relative">
+                        <div class="hamb">
+                            <i class="hamburger fas fa-bars tab">
+
+                            </i>
+                        </div>
+                        <div class="cl-4 responsive_nav">
+                            <div class="x" style="display: none;">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <ul>
+                                <li class="_home">HOME
+                                    <ul class="">
+                                        <div class="home_list d-none">
+                                            <li><a href="">Main Home</a></li>
+                                            <li><a href="">Grid Home</a></li>
+                                            <li><a href="">Flower Shop</a></li>
+                                            <li><a href="">Animated Slider</a></li>
+                                            <li><a href="">Metro Showcase</a></li>
+                                            <li><a href="">Carousel Showcase</a></li>
+                                            <li><a href="">Landing</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="_pages">PAGES
+                                    <ul class="">
+                                        <div class="pages_list d-none">
+                                            <li><a href="">About Us</a></li>
+                                            <li><a href="">FAQ Page</a></li>
+                                            <li><a href="">Contact Us</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="_shop">SHOP
+                                    <ul class="">
+                                        <div class="_shop1 d-none">
+                                            <li class="prdct">PRODUCT TYPES
+                                                <ul class="">
+                                                    <div class="prdct_list d-none">
+                                                        <li><a href="">Standard Product</a></li>
+                                                        <li><a href="">Grouped Product</a></li>
+                                                        <li><a href="">Variable Product</a></li>
+                                                        <li><a href="">Virtual Product</a></li>
+                                                        <li><a href="">External Product</a></li>
+                                                        <li><a href="">Downloadable Product</a></li>
+                                                        <li><a href="">On Sale Product</a></li>
+                                                        <li><a href=""> Out of Stock Product</a></li>
+                                                    </div>
+                                                </ul>
+                                            </li>
+                                            <li class="shop_pages">SHOP PAGES
+                                                <ul>
+                                                    <div class="shop_pages_list d-none">
+                                                        <li><a href="">My Account</a></li>
+                                                        <li><a href="">Cart</a></li>
+                                                        <li><a href="">Checkout</a></li>
+                                                        <li><a href="">Orders</a></li>
+                                                        <li><a href="">Downloads</a></li>
+                                                    </div>
+                                                </ul>
+                                            </li>
+                                            <li class="shop_types">SHOP TYPES
+                                                <ul>
+                                                    <div class="shop_types_list d-none">
+                                                        <li><a href="">Product List</a></li>
+                                                        <li><a href="">Without Sidebar</a></li>
+                                                        <li><a href="">With Category Filter</a></li>
+                                                        <li><a href="">With Ordering Filter</a></li>
+                                                        <li><a href="">Shop Carousel</a></li>
+                                                        <li><a href="">Product Categories</a></li>
+                                                        <li><a href="">Single Category</a></li>
+                                                    </div>
+                                                </ul>
+                                            </li>
+                                            <li class="shp_layouts">SHOP LAYOUTS
+                                                <ul>
+                                                    <div class="shp_layouts_list d-none">
+                                                        <li><a href="">Two Columns Grid</a></li>
+                                                        <li><a href="">Three Columns Grid</a></li>
+                                                        <li><a href="">Four Columns Grid</a></li>
+                                                        <li><a href="">Four Columns Wide</a></li>
+                                                        <li><a href="">Five Columns Wide</a></li>
+                                                        <li><a href="">Six Columns Wide</a></li>
+                                                    </div>
+                                                </ul>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="_portfolio">PORTFOLIO
+                                    <ul>
+                                        <div class="_portfolio_list d-none">
+                                            <li><a href="">Standard</a></li>
+                                            <li><a href="">Gallery</a></li>
+                                            <li><a href="">Masonry</a></li>
+                                            <li><a href="">Portfolio Layouts</a></li>
+                                            <li><a href="">Portfolio Single</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="_blog">BLOG
+                                    <ul>
+                                        <div class="_blog_list d-none">
+                                            <li><a href="">Masonry</a></li>
+                                            <li><a href="">Standard</a></li>
+                                            <li><a href="">Post Types</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="_elements">ELEMENTS
+                                    <ul>
+                                        <div class="_elements_list d-none">
+                                            <li><a href="">Classic</a></li>
+                                            <li><a href="">Infographic</a></li>
+                                            <li><a href="">Interactive</a></li>
+                                            <li><a href="">Typography</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
             </div>
         </nav>
     </header>
-    <!-- <div class="box"></div> -->
+
+
+    <div class="box"></div>
     <main>
         <section id="slider">
             <div class="images multiple-items d-flex">
                 <div class="image">
                     <img src="assets/images/h3-slider-background-3.jpg" alt="Slide image">
                 </div>
-                <!-- <div class="image">
-                    <img src="assets/images/h3-slider-background.jpg" alt="Slide image">
-                </div>
                 <div class="image">
                     <img src="assets/images/h3-slider-background-2.jpg" alt="Slide image">
-                </div> -->
+                </div>
+                <div class="image">
+                    <img src="assets/images/h3-slider-background.jpg" alt="Slide image">
+                </div>
             </div>
             <div class="title">
                 <h2>Send <span>flowers</span> like you mean it. </h2>
-                <p>Where flowers are our inspiration to create lasting memories. Whatever the occasion, our flowers will
+                <p>Where flowers are our inspiration to create lasting memories. Whatever the occasion, our flowers
+                    will
                     make it special cursus a sit amet mauris. </p>
                 <img src="assets/images/h2-sign-img.png" alt="Sign image">
             </div>
         </section>
+
+       
         <section id="category">
             <div class="container">
                 <div class="filters">
@@ -233,7 +364,7 @@
                 </div>
                 <div class="products all">
                     <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""><img src="assets/images/shop-14-img.jpg" width="100%" alt=""></a>
@@ -242,12 +373,12 @@
                                     <div class="name"><a href="">MAJESTY PALM</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="1"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""><img src="assets/images/shop-13-img.jpg" width="100%" alt=""></a>
@@ -256,12 +387,12 @@
                                     <div class="name"><a href="">FOXGLOVE FLOWER</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="2"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""> <img src="assets/images/shop-10-img.jpg" width="100%" alt=""></a>
@@ -270,12 +401,12 @@
                                     <div class="name"><a href="">SWEET ALYSSUM</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="3"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""><img src="assets/images/shop-11-img.jpg" width="100%" alt=""></a>
@@ -284,12 +415,12 @@
                                     <div class="name"><a href="">SPRING SNOWFLAKE</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href="">170$</a></div>
+                                        <div class="price" data-id="4"><a href="">170</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""><img src="assets/images/shop-12-img.jpg" width="100%" alt=""></a>
@@ -298,12 +429,12 @@
                                     <div class="name"><a href="">SCARLET SAGE</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href=""><del>259$</del> 159$</a></div>
+                                        <div class="price" data-id="5"><a href=""><del>259</del>159</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""> <img src="assets/images/shop-9-img.jpg" width="100%" alt=""></a>
@@ -312,12 +443,12 @@
                                     <div class="name"><a href="">MAJESTY PALM</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="6"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""><img src="assets/images/shop-8-img.jpg" width="100%" alt=""></a>
@@ -326,12 +457,12 @@
                                     <div class="name"><a href="">FOXGLOVE FLOWER</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="7"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""> <img src="assets/images/shop-7-img.jpg" width="100%" alt=""></a>
@@ -340,7 +471,7 @@
                                     <div class="name"><a href="">SWEET ALYSSUM</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="8"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -349,7 +480,7 @@
                 </div>
                 <div class="products cactuses d-none">
                     <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""><img src="assets/images/shop-9-img.jpg" width="100%" alt=""></a>
@@ -358,12 +489,12 @@
                                     <div class="name"><a href="">ROCK SOAPWORT</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="9"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""><img src="assets/images/shop-5-img.jpg" width="100%" alt=""></a>
@@ -372,12 +503,12 @@
                                     <div class="name"><a href="">WILD CACTUS</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href=""><del>259$</del> 159$</a></div>
+                                        <div class="price" data-id="10"><a href=""><del>259</del> 159</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""> <img src="assets/images/shop-3-img.jpg" width="100%" alt=""></a>
@@ -386,7 +517,7 @@
                                     <div class="name"><a href="">CACTUS IN ORANGE</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Read More</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="11"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -395,7 +526,7 @@
                 </div>
                 <div class="products exotic d-none">
                     <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""><img src="assets/images/shop-7-img.jpg" width="100%" alt=""></a>
@@ -404,12 +535,12 @@
                                     <div class="name"><a href="">WILD ROSES</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Buy on Amazon</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="12"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""><img src="assets/images/shop-6-img.jpg" width="100%" alt=""></a>
@@ -418,12 +549,12 @@
                                     <div class="name"><a href="">COLORFUL TULIPS</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href="">350$</a></div>
+                                        <div class="price" data-id="13"><a href="">350</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""> <img src="assets/images/shop-2-img.jpg" width="100%" alt=""></a>
@@ -432,7 +563,7 @@
                                     <div class="name"><a href="">ORANGE AMARYLLIS</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="14"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -441,7 +572,7 @@
                 </div>
                 <div class="products greens d-none">
                     <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""><img src="assets/images/shop-8-img.jpg" width="100%" alt=""></a>
@@ -450,12 +581,12 @@
                                     <div class="name"><a href="">SUMMER SAVORY</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="15"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""><img src="assets/images/shop-4-img.jpg" width="100%" alt=""></a>
@@ -464,12 +595,12 @@
                                     <div class="name"><a href="">PINK FLOWER TREE</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">PINK FLOWER TREE</a></div>
-                                        <div class="price"><a href="">180$ - 350$</a></div>
+                                        <div class="price" data-id="16"><a href="">180 - 350</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""> <img src="assets/images/shop-1-img.jpg" width="100%" alt=""></a>
@@ -478,7 +609,7 @@
                                     <div class="name"><a href="">SCHEFFLERA</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="17"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -487,7 +618,7 @@
                 </div>
                 <div class="products popular d-none">
                     <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""><img src="assets/images/shop-14-img.jpg" width="100%" alt=""></a>
@@ -496,12 +627,12 @@
                                     <div class="name"><a href="">MAJESTY PALM</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="18"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""><img src="assets/images/shop-13-img.jpg" width="100%" alt=""></a>
@@ -510,12 +641,12 @@
                                     <div class="name"><a href="">FOXGLOVE FLOWER</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="19"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""> <img src="assets/images/shop-10-img.jpg" width="100%" alt=""></a>
@@ -524,12 +655,12 @@
                                     <div class="name"><a href="">SWEET ALYSSUM</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="20"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""><img src="assets/images/shop-11-img.jpg" width="100%" alt=""></a>
@@ -538,12 +669,12 @@
                                     <div class="name"><a href="">SPRING SNOWFLAKE</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href="">170$</a></div>
+                                        <div class="price" data-id="21"><a href="">170</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""><img src="assets/images/shop-12-img.jpg" width="100%" alt=""></a>
@@ -552,7 +683,7 @@
                                     <div class="name"><a href="">SCARLET SAGE</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href=""><del>259</del> 159$</a></div>
+                                        <div class="price" data-id="22"><a href=""><del>259</del> 159</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -561,7 +692,7 @@
                 </div>
                 <div class="products various d-none">
                     <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""><img src="assets/images/shop-9-img.jpg" width="100%" alt=""></a>
@@ -570,12 +701,12 @@
                                     <div class="name"><a href="">ROCK SOAPWORT</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">View products</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="23"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""><img src="assets/images/shop-8-img.jpg" width="100%" alt=""></a>
@@ -584,12 +715,12 @@
                                     <div class="name"><a href="">SUMMER SAVORY</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="24"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""> <img src="assets/images/shop-7-img.jpg" width="100%" alt=""></a>
@@ -598,12 +729,12 @@
                                     <div class="name"><a href="">WILD ROSES</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Buy on Amazon</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="25"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""><img src="assets/images/shop-6-img.jpg" width="100%" alt=""></a>
@@ -612,12 +743,12 @@
                                     <div class="name"><a href="">COLORFUL TULIPS</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href="">350$</a></div>
+                                        <div class="price" data-id="26"><a href="">350</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""><img src="assets/images/shop-5-img.jpg" width="100%" alt=""></a>
@@ -626,12 +757,12 @@
                                     <div class="name"><a href="">WILD CACTUS</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href=""><del>259</del> 159$</a></div>
+                                        <div class="price" data-id="27"><a href=""><del>259</del> 159</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""> <img src="assets/images/shop-4-img.jpg" width="100%" alt=""></a>
@@ -640,12 +771,12 @@
                                     <div class="name"><a href="">PINK FLOWER TREE</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Select options</a></div>
-                                        <div class="price"><a href="">180$ - 350$</a></div>
+                                        <div class="price" data-id="28"><a href="">180 - 350</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""><img src="assets/images/shop-3-img.jpg" width="100%" alt=""></a>
@@ -654,12 +785,12 @@
                                     <div class="name"><a href="">CACTUS IN ORANGE</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Read more</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="29"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""> <img src="assets/images/shop-2-img.jpg" width="100%" alt=""></a>
@@ -668,7 +799,7 @@
                                     <div class="name"><a href="">ORANGE AMARYLLIS</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="30"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -677,7 +808,7 @@
                 </div>
                 <div class="products winter d-none">
                     <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""><img src="assets/images/shop-14-img.jpg" width="100%" alt=""></a>
@@ -686,12 +817,12 @@
                                     <div class="name"><a href="">MAJESTY PALM</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="31"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""><img src="assets/images/shop-13-img.jpg" width="100%" alt=""></a>
@@ -700,12 +831,12 @@
                                     <div class="name"><a href="">FOXGLOVE FLOWER</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="32"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="product mycard">
                                 <div class="cardd-header">
                                     <a href=""> <img src="assets/images/shop-10-img.jpg" width="100%" alt=""></a>
@@ -714,7 +845,7 @@
                                     <div class="name"><a href="">SWEET ALYSSUM</a></div>
                                     <div class="price-cards">
                                         <div class="add"><a href="">Add to cart</a></div>
-                                        <div class="price"><a href="">259$</a></div>
+                                        <div class="price" data-id="33"><a href="">259</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -931,12 +1062,12 @@
             </div>
         </section>
     </main>
-    
+
     <footer>
         <div class="container">
             <div class="top-footer">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="title">
                             <h6>
                                 CUSTOMER SERVICE
@@ -951,7 +1082,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="title">
                             <h6>COMPANY</h6>
                         </div>
@@ -966,7 +1097,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="title">
                             <h6>SOCIAL MEDIA</h6>
                         </div>
@@ -979,7 +1110,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="title">
                             <h6>ARCHIVE</h6>
                         </div>
@@ -1001,7 +1132,7 @@
             <div class="container">
                 <hr class="line">
             </div>
-            <div class="container d-flex justify-content-between">
+            <div class="btm container d-flex justify-content-between">
                 <div class="rights">
                     <span>© 2018 <a href="">Qode Interactive</a>, All Rights Reserved</span>
                 </div>
@@ -1024,6 +1155,7 @@
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/slick.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 

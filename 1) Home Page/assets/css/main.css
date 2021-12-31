@@ -7,6 +7,7 @@
 }
 
 a .up {
+  z-index: 100000;
   position: fixed;
   bottom: 35px;
   right: 35px;
@@ -23,7 +24,7 @@ a .up i {
   color: white;
 }
 
-nav {
+header nav {
   background-color: white;
   width: 100%;
   display: -webkit-box;
@@ -32,23 +33,26 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
   height: 70px;
+  z-index: 100000;
+  border-bottom: 1px solid #e8e8e8;
 }
 
-nav .container .logo img {
+header nav .container .logo img {
   width: 205px;
 }
 
-nav .container .options {
+header nav .container .options {
   padding: 0;
 }
 
-nav .container .options ul {
+header nav .container .options ul {
   margin: 0px;
   padding: 0;
 }
 
-nav .container .options ul li {
+header nav .container .options ul li {
   list-style: none;
   padding-right: 8%;
   padding-top: 5px;
@@ -58,30 +62,30 @@ nav .container .options ul li {
   cursor: pointer;
 }
 
-nav .container .options ul li .second {
+header nav .container .options ul li .second {
   position: absolute;
   display: block;
   height: 0px;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: .2s all;
-  transition: .2s all;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
 }
 
-nav .container .options ul li .second ul {
+header nav .container .options ul li .second ul {
   padding-top: 15px;
 }
 
-nav .container .options ul li .second ul li {
+header nav .container .options ul li .second ul li {
   padding-bottom: 15px;
 }
 
-nav .container .options ul li .second ul li a {
+header nav .container .options ul li .second ul li a {
   text-decoration: none;
   color: #737373;
 }
 
-nav .container .options ul li:hover .second {
+header nav .container .options ul li:hover .second {
   margin-top: 25px;
   height: 283px;
   width: 150px;
@@ -92,7 +96,7 @@ nav .container .options ul li:hover .second {
   padding-left: 15px;
 }
 
-nav .container .options ul li:hover #pages {
+header nav .container .options ul li:hover #pages {
   margin-top: 25px;
   height: 130px;
   width: 150px;
@@ -103,7 +107,7 @@ nav .container .options ul li:hover #pages {
   padding-left: 15px;
 }
 
-nav .container .options ul li:hover #shop {
+header nav .container .options ul li:hover #shop {
   margin-top: 25px;
   padding-top: 17px;
   height: 370px;
@@ -116,7 +120,7 @@ nav .container .options ul li:hover #shop {
   left: 5%;
 }
 
-nav .container .options ul li:hover #portfolio {
+header nav .container .options ul li:hover #portfolio {
   margin-top: 25px;
   height: 200px;
   width: 150px;
@@ -127,7 +131,7 @@ nav .container .options ul li:hover #portfolio {
   padding-left: 15px;
 }
 
-nav .container .options ul li:hover #blog {
+header nav .container .options ul li:hover #blog {
   margin-top: 25px;
   height: 130px;
   width: 150px;
@@ -138,7 +142,7 @@ nav .container .options ul li:hover #blog {
   padding-left: 15px;
 }
 
-nav .container .options ul li:hover #elements {
+header nav .container .options ul li:hover #elements {
   margin-top: 25px;
   height: 170px;
   width: 150px;
@@ -149,7 +153,7 @@ nav .container .options ul li:hover #elements {
   padding-left: 15px;
 }
 
-nav .container .mix {
+header nav .container .mix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,12 +163,108 @@ nav .container .mix {
   padding: 0;
 }
 
-nav .container .mix .search-icon {
+header nav .container .mix .search-icon {
   padding-right: 25px;
 }
 
-nav .container .mix .basket-icon {
+header nav .container .mix .basket-icon {
   padding-right: 25px;
+}
+
+header nav .container .relative {
+  position: relative;
+}
+
+header nav .container .relative .hamburger {
+  display: none;
+}
+
+header nav .container .relative .cl-4 {
+  position: fixed;
+  right: 0%;
+  z-index: 2;
+  background-color: white;
+  width: 300px;
+  border: 1px solid white;
+  -webkit-box-shadow: 0 1px 23.28px 0.72px;
+          box-shadow: 0 1px 23.28px 0.72px;
+  top: 0px;
+  width: 0;
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  header nav .container .relative .cl-4 {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 380px) {
+  header nav .container .relative .cl-4 {
+    max-width: 100%;
+  }
+}
+
+header nav .container .relative .cl-4 .x {
+  position: relative;
+}
+
+header nav .container .relative .cl-4 .x .fa-times {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+header nav .container .relative .cl-4 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  padding: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: #0e0e0e;
+}
+
+header nav .container .relative .cl-4 ul li {
+  padding-bottom: 10px;
+}
+
+header nav .container .relative .cl-4 ul li ul {
+  padding: 0px;
+  padding-top: 10px;
+}
+
+header nav .container .relative .cl-4 ul li ul li {
+  color: #6d6a6a;
+}
+
+header nav .container .relative .cl-4 ul li ul li a {
+  text-decoration: none;
+  color: #6d6a6a;
+}
+
+@media screen and (max-width: 1024px) {
+  header .options {
+    display: none;
+  }
+  header .mix {
+    display: none !important;
+  }
+  header .relative .hamb .hamburger {
+    display: block !important;
+  }
+}
+
+.box {
+  width: 100%;
+  background-color: black;
+  height: 1px;
+  padding-top: 70px;
 }
 
 main #slider {
@@ -184,11 +284,11 @@ main #slider .images .image {
 main #slider .images .image img {
   width: 100%;
   height: 100%;
-  -webkit-animation: f_img_scale 4.2555s infinite;
-          animation: f_img_scale 4.2555s infinite;
+  -webkit-animation: img_scale 4.2555s infinite;
+          animation: img_scale 4.2555s infinite;
 }
 
-@-webkit-keyframes f_img_scale {
+@-webkit-keyframes img_scale {
   0% {
     -webkit-transform: scale(1) translateZ(0);
             transform: scale(1) translateZ(0);
@@ -203,7 +303,7 @@ main #slider .images .image img {
   }
 }
 
-@keyframes f_img_scale {
+@keyframes img_scale {
   0% {
     -webkit-transform: scale(1) translateZ(0);
             transform: scale(1) translateZ(0);
@@ -221,14 +321,14 @@ main #slider .images .image img {
 main #slider .title {
   width: 30%;
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 200px;
 }
 
 main #slider .title h2 {
   padding: 0 90px 15px 0;
   color: #0e0e0e;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 41px;
   line-height: 51px;
   font-weight: 400;
@@ -242,7 +342,7 @@ main #slider .title p {
   padding: 0 10px 10px 0;
   color: #6d6a6a;
   font-size: 17px;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   line-height: 29px;
   font-weight: 400;
 }
@@ -467,7 +567,7 @@ main #video_part .container .row .content {
 
 main #video_part .container .row .content h2 {
   color: #1b1b1b;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 38px;
   line-height: 1.447em;
@@ -481,7 +581,7 @@ main #video_part .container .row .content p {
   font-size: 17px;
   line-height: 29px;
   margin-top: 27px;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   color: #afafaf;
 }
 
@@ -507,21 +607,21 @@ main #about_experts .container .title {
 }
 
 main #about_experts .container .title h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 38px;
   color: black;
   font-weight: 400;
 }
 
 main #about_experts .container .title p {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 17px;
   color: #6d6a6a;
   line-height: 29px;
 }
 
 main #about_experts .container .experts .row .expert .content h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 500;
   color: #1b1b1b;
@@ -531,7 +631,7 @@ main #about_experts .container .experts .row .expert .content h6 {
 
 main #about_experts .container .experts .row .expert .content span {
   font-size: 12px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #afafaf;
 }
 
@@ -547,7 +647,7 @@ main #join_to_us .container .main {
 }
 
 main #join_to_us .container .main .title h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 1.4em;
@@ -557,7 +657,7 @@ main #join_to_us .container .main .title h3 {
 main #join_to_us .container .main .search .search_input input {
   color: #959595;
   font-size: 12px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 15px;
   width: 330px;
   border: none;
@@ -566,8 +666,8 @@ main #join_to_us .container .main .search .search_input input {
 main #join_to_us .container .main .search .search_button button {
   padding: 15px 30px;
   font-size: 12px;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: .1em;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.1em;
   font-weight: 500;
   text-transform: uppercase;
   color: #ffffff;
@@ -587,7 +687,7 @@ main #join_to_us .container .main .search_click .search_required {
 main #join_to_us .container .main .search_click .search_required span {
   font-size: 15px;
   font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 24px;
 }
 
@@ -601,14 +701,14 @@ main #from_our_blog .container .title {
 }
 
 main #from_our_blog .container .title h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 38px;
   color: #0e0e0e;
   font-weight: 400;
 }
 
 main #from_our_blog .container .title p {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 17px;
   color: #6d6a6a;
   line-height: 29px;
@@ -645,9 +745,9 @@ main #from_our_blog .container .about_flowers .row .about_flower .img .date {
 main #from_our_blog .container .about_flowers .row .about_flower .img .date a {
   text-decoration: none;
   vertical-align: middle;
-  letter-spacing: .15em;
+  letter-spacing: 0.15em;
   font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #000;
   font-size: 10px;
 }
@@ -660,7 +760,7 @@ main #from_our_blog .container .about_flowers .row .about_flower .img .date a:ho
 
 main #from_our_blog .container .about_flowers .row .about_flower .content h5 a {
   text-decoration: none;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 22px;
   color: #0e0e0e;
   line-height: 1.363em;
@@ -668,7 +768,7 @@ main #from_our_blog .container .about_flowers .row .about_flower .content h5 a {
 }
 
 main #from_our_blog .container .about_flowers .row .about_flower .content p {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   line-height: 1.6em;
   font-size: 15px;
   color: #6d6a6a;
@@ -718,14 +818,14 @@ main #second_slider .container .row .slider .item .image img {
 main #second_slider .container .row .slider .item .title p {
   font-style: italic;
   margin: 30px 0;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 24px;
   color: #4b4747;
   line-height: 1.5em;
 }
 
 main #second_slider .container .row .slider .item .title span {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   color: #afafaf;
   text-transform: capitalize;
@@ -806,5 +906,32 @@ footer .bottom-footer .container .insta-face .face a {
 
 footer .bottom-footer .container .insta-face .face a:hover {
   color: #f34f3f;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .btm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  footer .btm .cards-image {
+    padding: 4% 0;
+  }
+  footer .btm .insta-face {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 990px) and (min-width: 200px) {
+  #slider .title {
+    width: 40% !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */

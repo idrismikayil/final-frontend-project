@@ -20,12 +20,11 @@
             <i class="fas fa-angle-up"></i>
         </div>
     </a>
-
     <header>
         <nav>
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 logo">
+                <div class="row justify-content-between">
+                    <div class="col-3 logo">
                         <img src="assets/images/WhatsApp Image 2021-12-21 at 2.49.34 PM.jpeg" alt="">
                     </div>
                     <div class="col-lg-7 options">
@@ -161,13 +160,136 @@
                         </div>
                         <div class="basket-icon">
                             <i class="fas fa-shopping-bag"></i>
+                            <span id="count_product">0</span>
                         </div>
-                        <div class="cart">
-                            <span>CART (0$)</span>
+                        <div class="cart-price">
+                            <span>CART </span>
+                            <span id="cart-price"></span>
+                        </div>
+                    </div>
+                    <div class="col-1 relative">
+                        <div class="hamb">
+                            <i class="hamburger fas fa-bars tab">
+
+                            </i>
+                        </div>
+                        <div class="cl-4 responsive_nav">
+                            <div class="x" style="display: none;">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <ul>
+                                <li class="_home">HOME
+                                    <ul class="">
+                                        <div class="home_list d-none">
+                                            <li><a href="">Main Home</a></li>
+                                            <li><a href="">Grid Home</a></li>
+                                            <li><a href="">Flower Shop</a></li>
+                                            <li><a href="">Animated Slider</a></li>
+                                            <li><a href="">Metro Showcase</a></li>
+                                            <li><a href="">Carousel Showcase</a></li>
+                                            <li><a href="">Landing</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="_pages">PAGES
+                                    <ul class="">
+                                        <div class="pages_list d-none">
+                                            <li><a href="">About Us</a></li>
+                                            <li><a href="">FAQ Page</a></li>
+                                            <li><a href="">Contact Us</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="_shop">SHOP
+                                    <ul class="">
+                                        <div class="_shop1 d-none">
+                                            <li class="prdct">PRODUCT TYPES
+                                                <ul class="">
+                                                    <div class="prdct_list d-none">
+                                                        <li><a href="">Standard Product</a></li>
+                                                        <li><a href="">Grouped Product</a></li>
+                                                        <li><a href="">Variable Product</a></li>
+                                                        <li><a href="">Virtual Product</a></li>
+                                                        <li><a href="">External Product</a></li>
+                                                        <li><a href="">Downloadable Product</a></li>
+                                                        <li><a href="">On Sale Product</a></li>
+                                                        <li><a href=""> Out of Stock Product</a></li>
+                                                    </div>
+                                                </ul>
+                                            </li>
+                                            <li class="shop_pages">SHOP PAGES
+                                                <ul>
+                                                    <div class="shop_pages_list d-none">
+                                                        <li><a href="">My Account</a></li>
+                                                        <li><a href="">Cart</a></li>
+                                                        <li><a href="">Checkout</a></li>
+                                                        <li><a href="">Orders</a></li>
+                                                        <li><a href="">Downloads</a></li>
+                                                    </div>
+                                                </ul>
+                                            </li>
+                                            <li class="shop_types">SHOP TYPES
+                                                <ul>
+                                                    <div class="shop_types_list d-none">
+                                                        <li><a href="">Product List</a></li>
+                                                        <li><a href="">Without Sidebar</a></li>
+                                                        <li><a href="">With Category Filter</a></li>
+                                                        <li><a href="">With Ordering Filter</a></li>
+                                                        <li><a href="">Shop Carousel</a></li>
+                                                        <li><a href="">Product Categories</a></li>
+                                                        <li><a href="">Single Category</a></li>
+                                                    </div>
+                                                </ul>
+                                            </li>
+                                            <li class="shp_layouts">SHOP LAYOUTS
+                                                <ul>
+                                                    <div class="shp_layouts_list d-none">
+                                                        <li><a href="">Two Columns Grid</a></li>
+                                                        <li><a href="">Three Columns Grid</a></li>
+                                                        <li><a href="">Four Columns Grid</a></li>
+                                                        <li><a href="">Four Columns Wide</a></li>
+                                                        <li><a href="">Five Columns Wide</a></li>
+                                                        <li><a href="">Six Columns Wide</a></li>
+                                                    </div>
+                                                </ul>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="_portfolio">PORTFOLIO
+                                    <ul>
+                                        <div class="_portfolio_list d-none">
+                                            <li><a href="">Standard</a></li>
+                                            <li><a href="">Gallery</a></li>
+                                            <li><a href="">Masonry</a></li>
+                                            <li><a href="">Portfolio Layouts</a></li>
+                                            <li><a href="">Portfolio Single</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="_blog">BLOG
+                                    <ul>
+                                        <div class="_blog_list d-none">
+                                            <li><a href="">Masonry</a></li>
+                                            <li><a href="">Standard</a></li>
+                                            <li><a href="">Post Types</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="_elements">ELEMENTS
+                                    <ul>
+                                        <div class="_elements_list d-none">
+                                            <li><a href="">Classic</a></li>
+                                            <li><a href="">Infographic</a></li>
+                                            <li><a href="">Interactive</a></li>
+                                            <li><a href="">Typography</a></li>
+                                        </div>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
             </div>
         </nav>
     </header>
@@ -185,7 +307,7 @@
         <section id="acc">
             <div class="container">
                 <div class="row">
-                    <div class="accordion col-lg-6" id="first">
+                    <div class="accordion col-lg-6 col-md-12 col-sm-12" id="first">
                         <div class="element one">
                             <div class="button">
                                 <span>CREATIVE ELEMENTS</span>
@@ -221,7 +343,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion col-lg-6" id="second">
+                    <div class="accordion col-lg-6 col-md-12 col-sm-12" id="second">
                         <div class="element one">
                             <div class="button">
                                 <span>CREATIVE ELEMENTS</span>
@@ -256,7 +378,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion col-lg-6" id="third">
+                    <div class="accordion col-lg-6 col-md-12 col-sm-12" id="third">
                         <div class="element one">
                             <div class="button">
                                 <span>CREATIVE ELEMENTS</span>
@@ -291,7 +413,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion col-lg-6" id="last">
+                    <div class="accordion col-lg-6 col-md-12 col-sm-12" id="last">
                         <div class="element one">
                             <div class="button">
                                 <span>EASY IMPORT</span>
@@ -336,7 +458,7 @@
         <div class="container">
             <div class="top-footer">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="title">
                             <h6>
                                 CUSTOMER SERVICE
@@ -351,7 +473,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="title">
                             <h6>COMPANY</h6>
                         </div>
@@ -366,7 +488,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="title">
                             <h6>SOCIAL MEDIA</h6>
                         </div>
@@ -379,7 +501,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="title">
                             <h6>ARCHIVE</h6>
                         </div>
@@ -401,7 +523,7 @@
             <div class="container">
                 <hr class="line">
             </div>
-            <div class="container d-flex justify-content-between">
+            <div class="btm container d-flex justify-content-between">
                 <div class="rights">
                     <span>© 2018 <a href="">Qode Interactive</a>, All Rights Reserved</span>
                 </div>

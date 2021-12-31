@@ -23,7 +23,7 @@ a .up i {
   color: white;
 }
 
-nav {
+header nav {
   background-color: white;
   width: 100%;
   display: -webkit-box;
@@ -32,23 +32,26 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
   height: 70px;
+  z-index: 100000;
+  border-bottom: 1px solid #e8e8e8;
 }
 
-nav .container .logo img {
+header nav .container .logo img {
   width: 205px;
 }
 
-nav .container .options {
+header nav .container .options {
   padding: 0;
 }
 
-nav .container .options ul {
+header nav .container .options ul {
   margin: 0px;
   padding: 0;
 }
 
-nav .container .options ul li {
+header nav .container .options ul li {
   list-style: none;
   padding-right: 8%;
   padding-top: 5px;
@@ -58,30 +61,30 @@ nav .container .options ul li {
   cursor: pointer;
 }
 
-nav .container .options ul li .second {
+header nav .container .options ul li .second {
   position: absolute;
   display: block;
   height: 0px;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: .2s all;
-  transition: .2s all;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
 }
 
-nav .container .options ul li .second ul {
+header nav .container .options ul li .second ul {
   padding-top: 15px;
 }
 
-nav .container .options ul li .second ul li {
+header nav .container .options ul li .second ul li {
   padding-bottom: 15px;
 }
 
-nav .container .options ul li .second ul li a {
+header nav .container .options ul li .second ul li a {
   text-decoration: none;
   color: #737373;
 }
 
-nav .container .options ul li:hover .second {
+header nav .container .options ul li:hover .second {
   margin-top: 25px;
   height: 283px;
   width: 150px;
@@ -92,7 +95,7 @@ nav .container .options ul li:hover .second {
   padding-left: 15px;
 }
 
-nav .container .options ul li:hover #pages {
+header nav .container .options ul li:hover #pages {
   margin-top: 25px;
   height: 130px;
   width: 150px;
@@ -103,7 +106,7 @@ nav .container .options ul li:hover #pages {
   padding-left: 15px;
 }
 
-nav .container .options ul li:hover #shop {
+header nav .container .options ul li:hover #shop {
   margin-top: 25px;
   padding-top: 17px;
   height: 370px;
@@ -116,7 +119,7 @@ nav .container .options ul li:hover #shop {
   left: 5%;
 }
 
-nav .container .options ul li:hover #portfolio {
+header nav .container .options ul li:hover #portfolio {
   margin-top: 25px;
   height: 200px;
   width: 150px;
@@ -127,7 +130,7 @@ nav .container .options ul li:hover #portfolio {
   padding-left: 15px;
 }
 
-nav .container .options ul li:hover #blog {
+header nav .container .options ul li:hover #blog {
   margin-top: 25px;
   height: 130px;
   width: 150px;
@@ -138,7 +141,7 @@ nav .container .options ul li:hover #blog {
   padding-left: 15px;
 }
 
-nav .container .options ul li:hover #elements {
+header nav .container .options ul li:hover #elements {
   margin-top: 25px;
   height: 170px;
   width: 150px;
@@ -149,7 +152,7 @@ nav .container .options ul li:hover #elements {
   padding-left: 15px;
 }
 
-nav .container .mix {
+header nav .container .mix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,12 +162,108 @@ nav .container .mix {
   padding: 0;
 }
 
-nav .container .mix .search-icon {
+header nav .container .mix .search-icon {
   padding-right: 25px;
 }
 
-nav .container .mix .basket-icon {
+header nav .container .mix .basket-icon {
   padding-right: 25px;
+}
+
+header nav .container .relative {
+  position: relative;
+}
+
+header nav .container .relative .hamburger {
+  display: none;
+}
+
+header nav .container .relative .cl-4 {
+  position: fixed;
+  right: 0%;
+  z-index: 2;
+  background-color: white;
+  width: 300px;
+  border: 1px solid white;
+  -webkit-box-shadow: 0 1px 23.28px 0.72px;
+          box-shadow: 0 1px 23.28px 0.72px;
+  top: 0px;
+  width: 0;
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  header nav .container .relative .cl-4 {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 380px) {
+  header nav .container .relative .cl-4 {
+    max-width: 100%;
+  }
+}
+
+header nav .container .relative .cl-4 .x {
+  position: relative;
+}
+
+header nav .container .relative .cl-4 .x .fa-times {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+header nav .container .relative .cl-4 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  padding: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: #0e0e0e;
+}
+
+header nav .container .relative .cl-4 ul li {
+  padding-bottom: 10px;
+}
+
+header nav .container .relative .cl-4 ul li ul {
+  padding: 0px;
+  padding-top: 10px;
+}
+
+header nav .container .relative .cl-4 ul li ul li {
+  color: #6d6a6a;
+}
+
+header nav .container .relative .cl-4 ul li ul li a {
+  text-decoration: none;
+  color: #6d6a6a;
+}
+
+@media screen and (max-width: 1024px) {
+  header .options {
+    display: none;
+  }
+  header .mix {
+    display: none !important;
+  }
+  header .relative .hamb .hamburger {
+    display: block !important;
+  }
+}
+
+.box {
+  width: 100%;
+  background-color: white;
+  height: 1px;
+  padding-top: 70px;
 }
 
 main #title_wrapper {
@@ -214,7 +313,7 @@ main #products .products .col-lg-3 .mycard .card-body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #f34f3f;
+  background: white;
   opacity: 0;
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
@@ -421,8 +520,7 @@ main #products-2 .products .col-lg-2 .mycard .card-body .price a {
 }
 
 footer {
-  margin-top: 90px;
-  padding-top: 40px;
+  margin-top: 100px;
   padding-bottom: 20px;
   background-color: #fefaf3;
 }
@@ -487,5 +585,26 @@ footer .bottom-footer .container .insta-face .face a {
 
 footer .bottom-footer .container .insta-face .face a:hover {
   color: #f34f3f;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .btm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  footer .btm .cards-image {
+    padding: 4% 0;
+  }
+  footer .btm .insta-face {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
